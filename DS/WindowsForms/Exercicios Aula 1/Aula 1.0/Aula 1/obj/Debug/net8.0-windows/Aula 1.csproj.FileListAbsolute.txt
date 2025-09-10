@@ -1,0 +1,32 @@
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.exe
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.deps.json
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.runtimeconfig.json
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.dll
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.pdb
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula_1.Form1.resources
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.csproj.GenerateResource.cache
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.AssemblyInfoInputs.cache
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.AssemblyInfo.cs
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.csproj.CoreCompileInputs.cache
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.dll
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\refint\Aula 1.dll
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.pdb
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.genruntimeconfig.cache
+D:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\ref\Aula 1.dll
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.exe
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.deps.json
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.runtimeconfig.json
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.dll
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\bin\Debug\net8.0-windows\Aula 1.pdb
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula_1.Form1.resources
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.csproj.GenerateResource.cache
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.GeneratedMSBuildEditorConfig.editorconfig
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.AssemblyInfoInputs.cache
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.AssemblyInfo.cs
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.csproj.CoreCompileInputs.cache
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.dll
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\refint\Aula 1.dll
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.pdb
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\Aula 1.genruntimeconfig.cache
+E:\DS\Comandos WinForm C#\Aula 1\Aula 1\obj\Debug\net8.0-windows\ref\Aula 1.dll

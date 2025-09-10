@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingBet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="KingBet.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="headerBet">
+        <a href="deposito.html" class="seta-voltar"><i class="fa-solid fa-arrow-left seta"></i></a>
+        <p id="saldo" class="saldoBet">R$ 0,00</p>
+    </header>
+
+    <main>
+
+        <div class="container1">
+            <div class="div-time">
+                <div class="div-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1024px-Palmeiras_logo.svg.png" alt="">
+                    <h1 class="nome-time">Palmeiras</h1>
+                </div>
+            </div>
+            <h1 class="nome-time">X</h1>
+            <div class="div-time">
+                <div class="div-img">
+                    <h1 class="nome-time">Barcelona</h1>
+                    <img src="https://a.espncdn.com/i/teamlogos/soccer/500/83.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container2">
+            <div class="div-info-resultfinal" id="info-resultfinal">
+                <h1>Resultado Final</h1>
+                <i class="fa-solid fa-chevron-up" id="arrow-resultfinal"></i>
+            </div>
+            <div class="div-btn-resultfinal" id="btn-resultfinal">
+                <button id="btn1-resultfinal" class="btn-resultfinal unselected">
+                    <p>1</p>
+                    <h6>1.42</h6>
+                </button>
+                <button id="btnX-resultfinal" class="btn-resultfinal unselected">
+                    <p>X</p>
+                    <h6>4.40</h6>
+                </button>
+                <button id="btn2-resultfinal" class="btn-resultfinal unselected">
+                    <p>2</p>
+                    <h6>7.10</h6>
+                </button>
+            </div>
+        </div>
+        
+        <div class="container3">
+            <div class="div-info-ambas" id="info-ambas">
+                <h1>Ambas Marcam</h1>
+                <i class="fa-solid fa-chevron-up" id="arrow-ambas"></i>
+            </div>
+            <div class="div-btn-ambas" id="btn-ambas">
+                <button id="btn-ambassim" class="btn-ambas unselected">
+                    <p>Sim</p>
+                    <h6>1.82</h6>
+                </button>
+                <button id="btn-ambasnao" class="btn-ambas unselected">
+                    <p>Não</p>
+                    <h6>1.94</h6>
+                </button>
+            </div>
+        </div>
+
+        <div class="container4">
+            <div class="div-info-gols" id="info-gols">
+                <h1>Total de Gols</h1>
+                <i class="fa-solid fa-chevron-up" id="arrow-gols"></i>
+            </div>
+            <div class="div-btn-gols" id="btn-gols">
+                <div class="div-maisgols">
+                    <button id="btn-maisgols0" class="btn-gols unselected">
+                        <p>Mais de 0.5</p>
+                        <h6>1.04</h6>
+                    </button>
+                    <button id="btn-maisgols1" class="btn-gols unselected">
+                        <p>Mais de 1.5</p>
+                        <h6>1.19</h6>
+                    </button>
+                    <button id="btn-maisgols2" class="btn-gols unselected">
+                        <p>Mais de 2.5</p>
+                        <h6>1.48</h6>
+                    </button>
+                    <button id="btn-maisgols3" class="btn-gols unselected">
+                        <p>Mais de 3.5</p>
+                        <h6>2.12</h6>
+                    </button>
+                    <button id="btn-maisgols4" class="btn-gols unselected">
+                        <p>Mais de 4.5</p>
+                        <h6>3.46</h6>
+                    </button>
+                    <button id="btn-maisgols5" class="btn-gols unselected">
+                        <p>Mais de 5.5</p>
+                        <h6>5.98</h6>
+                    </button>
+                </div>
+                <div class="div-menosgols">
+                    <button id="btn-menosgols0" class="btn-gols unselected">
+                        <p>Menos de 0.5</p>
+                        <h6>9.75</h6>
+                    </button>
+                    <button id="btn-menosgols1" class="btn-gols unselected">
+                        <p>Menos de 1.5</p>
+                        <h6>4.50</h6>
+                    </button>
+                    <button id="btn-menosgols2" class="btn-gols unselected">
+                        <p>Menos de 2.5</p>
+                        <h6>2.33</h6>
+                    </button>
+                    <button id="btn-menosgols3" class="btn-gols unselected">
+                        <p>Menos de 3.5</p>
+                        <h6>1.64</h6>
+                    </button>
+                    <button id="btn-menosgols4" class="btn-gols unselected">
+                        <p>Menos de 4.5</p>
+                        <h6>1.22</h6>
+                    </button>
+                    <button id="btn-menosgols5" class="btn-gols unselected">
+                        <p>Menos de 5.5</p>
+                        <h6>1.09</h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <br>
+
+    <input type="number" class="ipt-valor" name="" id="inputAposta" placeholder="Digite um valor...">
+    <button class="btn-apostar" onclick="apostar()">Apostar</button>
+
+    <h1 id="odd">Nenhuma odd foi selecionada</h1>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

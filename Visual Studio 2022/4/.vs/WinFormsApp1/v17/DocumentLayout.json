@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio 2022\\4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|D:\\Visual Studio 2022\\4\\winformsapp1\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|d:\\visual studio 2022\\4\\winformsapp1\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|D:\\Visual Studio 2022\\4\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|D:\\Visual Studio 2022\\4\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5385EE2A-027D-4E00-9306-C6C21148DF29}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Form1.cs",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:22:59.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Form1.cs [Projeto]",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T10:12:42.027Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Data.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Data.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Data.cs",
+              "RelativeToolTip": "WinFormsApp1\\Data.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:16:13.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Funcionario.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Funcionario.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\4\\WinFormsApp1\\Funcionario.cs",
+              "RelativeToolTip": "WinFormsApp1\\Funcionario.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T10:40:46.503Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

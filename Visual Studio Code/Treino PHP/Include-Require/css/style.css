@@ -1,0 +1,66 @@
+*{
+    outline: 0;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+body{
+    background-image: url(../img/Paisagem\ Floresta\ à\ Noite.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    color: white;
+    height: 100vh;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding: 10px 0px;
+    height: 80px;
+    box-shadow: 0 0 15px black;
+}
+.links{
+    text-decoration: underline transparent;
+    color: white;
+    font-size: 25px;
+}
+.links:hover{
+    transition: ease-out .3s;
+    text-decoration: underline 3px white;
+}
+.link-selecionado{
+    text-decoration: underline transparent;
+    color: rgb(0, 255, 242);
+    font-size: 25px;
+}
+.link-selecionado:hover{
+    transition: ease-out .3s;
+    text-decoration: underline 3px rgb(0, 255, 242);
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+}
+.form-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 20vh;
+    border: solid 2px gray;
+    width: 300px;
+}
+.login-cadeado-img{
+    height: 50px;
+    width: 50px;
+}
+.login-perfil-img{
+    height: 50px;
+    width: 50px;
+}

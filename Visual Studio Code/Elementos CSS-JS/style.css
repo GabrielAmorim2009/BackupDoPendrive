@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    font-family: "BUNGEE";
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(34, 34, 34);
+}
+
+
+/*--------Header--------*/
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background: rgb(0, 0, 0);
+    padding: 20px 20px 25px 20px;
+    box-shadow: 0 0 25px black;
+}
+.container-header a{
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+    background: rgb(26, 26, 26);
+    border-radius: 50rem;
+    padding: 15px;
+    margin-top: 5px;
+    transition: .5s;
+}
+.container-header a:hover{
+    color: rgb(0, 255, 106);
+    box-shadow: 0 0 15px rgb(0, 255, 106);
+}
+.container-header a:active{
+    transform: scale(0.9);
+}
+
+/*--------Header--------*/
+
+
+/*--------Menu Circular--------*/
+
+.container{
+    display: grid;
+    place-items: center;
+
+    height: 83vh;
+}
+.div-mncircular{
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    border-radius: 50rem;
+    width: 400px;
+    height: 400px;
+}
+.btn-mncircular{
+    display: grid;
+    place-items: center;
+    position: absolute;
+
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 15px black;
+    border-radius: 50rem;
+    width: 90px;
+    height: 90px;
+    transition: .5s;
+}
+.btn-mncircular img{
+    width: 60px;
+    height: 60px;
+}
+.btn-mncircular1{
+    z-index: 1;
+}
+.btn-mncircular2{
+    z-index: 2;
+}
+.btn-mncircular:hover{
+    background: rgb(182, 182, 182);
+}
+
+/*--------Menu Circular--------*/
+
+
+/*--------Input Dinâmico--------*/
+
+.div-inputdin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: white;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 25px black;
+    border-radius: 15px;
+    padding: 25px;
+}
+.main-inputdin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    width: 100%;
+}
+.inputdin{
+    width: 90%;
+    padding: 10px 12px;
+    border: solid 2px rgb(160, 160, 160);
+    border-radius: 50rem;
+    color: rgb(0, 201, 84);
+    transition: .5s;
+}
+.inputdin:focus{
+    border: solid 2px rgb(0, 255, 106);
+}
+.inputdin:focus + .lbl-inputdin{
+    transform: translateY(-20px);
+    color: rgb(0, 255, 106);
+}
+    .inputdin:valid + .lbl-inputdin{
+    transform: translateY(-20px);
+    color: rgb(0, 255, 106);
+}
+.lbl-inputdin{
+    position: absolute;
+
+    pointer-events: none;
+    background: white;
+    left: 20px;
+    font-size: 11px;
+    color: rgb(160, 160, 160);
+    transform: translateY(0px);
+    padding: 2.5px;
+    transition: .5s;
+}
+.txt-inputdin{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+/*--------Input Dinâmico--------*/
+
+
+/*--------Barra Lateral--------*/
+
+.container-barralateral{
+    display: flex;
+    justify-content: flex-start;
+
+    height: 83vh;
+}
+.div-barralateral{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: white;
+    box-shadow: 0 0 15px black;
+    width: 20px;
+    height: 89.5vh;
+    transition: .4s;
+}
+.div-trespontos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 10px;
+    margin: 10px;
+    transition: .4s;
+}
+.div-trespontos:hover{
+    width: 60px;
+}
+.div-trespontos:hover hr{
+    height: 10px;
+}
+.div-trespontos hr{
+    border: none;
+    background: black;
+    height: 10px;
+    width: 100%;
+    border-radius: 50rem;
+}
+.div-trespontos:hover .instagram{
+    height: 60px;
+    width: 60px;
+}
+.logo{
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    height: 20px;
+    width: 20px;
+    margin: 10px 0;
+    border-radius: 30%;
+    transition: .4s;
+}
+.logo:hover{
+    background: rgb(231, 230, 230);
+    box-shadow: 0 0 15px black;
+    transform: scale(1.1);
+}
+.logo img{
+    position: absolute;
+
+    height: 100%;
+}
+.tiktok img{
+    height: 80%;
+}
+.div-conf{
+    position: absolute;
+
+    bottom: 0;
+}
+.conf{
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    height: 20px;
+    width: 20px;
+    margin: 10px 0;
+    border-radius: 50rem;
+    transition: .4s;
+}
+.conf:hover{
+    background: rgb(231, 230, 230);
+    box-shadow: 0 0 15px black;
+    transform: scale(1.1);
+}
+.conf img{
+    position: absolute;
+
+    height: 80%;
+}
+
+/*--------Barra Lateral--------*/
+
+
+/*--------Descrição--------*/
+
+.container-descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 83vh;
+}
+.div-descricao{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .5s;
+    border: solid 2px rgb(34, 34, 34);
+    box-shadow: 0 0 15px black;
+    background: rgb(5, 5, 5);
+}
+.titulo-descricao{
+    color: rgb(158, 158, 158);
+    overflow: auto;
+    text-align: justify;
+    margin: 0px 45px 0 13px;
+    height: 75%;
+    font-size: 20px;
+}
+.descricao{
+    color: white;
+    font-size: 15px;
+}
+.div-descricao img{
+    position: absolute;
+    
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    filter: invert(0.5);
+    height: 15px;
+    width: 15px;
+    transition: .5s;
+}
+
+/*--------Descrição--------*/
+
+
+/*--------Botão Neon--------*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnNeon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    width: 100px;
+    border-radius: 50rem;
+    box-shadow: 0 0 10px rgb(62, 255, 255), inset 0 0 10px rgb(62, 255, 255);
+    border: solid 4px rgb(0, 173, 173);
+    background: transparent;
+    cursor: pointer;
+}
+.btnNeon:hover{
+    transition: .8s;
+    border: solid 0px aqua;
+}
+.btnNeon:hover p{
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+}
+.btnNeon:hover i{
+    transition: .3s;
+    color: black;
+}
+.btnNeon:active{
+    transition: .1s;
+    transform: scale(0.9);
+}
+.btnNeon p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    background: aqua;
+    height: 0;
+    width: 0;
+    border-radius: 50rem;
+}
+.btnNeon i{
+    font-size: 40px;
+    color: rgb(1, 199, 199);
+    text-shadow: 0 0 2px aqua, 0 0 10px aqua;
+}
+
+/*--------Botão Neon--------*/

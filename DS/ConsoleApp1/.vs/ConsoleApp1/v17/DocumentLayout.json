@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DS\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|D:\\DS\\ConsoleApp1\\consoleapp1\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|d:\\ds\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|D:\\DS\\ConsoleApp1\\consoleapp1\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|D:\\DS\\ConsoleApp1\\consoleapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|D:\\DS\\ConsoleApp1\\consoleapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|D:\\DS\\ConsoleApp1\\consoleapp1\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|D:\\DS\\ConsoleApp1\\consoleapp1\\helper2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\helper2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|D:\\DS\\ConsoleApp1\\consoleapp1\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433BA88B-751E-421E-BEC4-E118F65BB1B4}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Animal.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Animal.cs",
+              "ToolTip": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Animal.cs",
+              "RelativeToolTip": "ConsoleApp1\\Animal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T11:27:34.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Form1.cs",
+              "ToolTip": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Form1.cs",
+              "RelativeToolTip": "ConsoleApp1\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T11:12:48.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\ConsoleApp1\\ConsoleApp1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T11:10:07.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:12:40.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Funcionario.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Funcionario.cs",
+              "ToolTip": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Funcionario.cs",
+              "RelativeToolTip": "ConsoleApp1\\Funcionario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:49:51.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Pessoa.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Pessoa.cs",
+              "ToolTip": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Pessoa.cs",
+              "RelativeToolTip": "ConsoleApp1\\Pessoa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:39:22.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Helper2.cs",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Helper2.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Helper2.cs",
+              "ToolTip": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Helper2.cs",
+              "RelativeToolTip": "ConsoleApp1\\Helper2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:28:57.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Helper.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Helper.cs",
+              "ToolTip": "D:\\DS\\ConsoleApp1\\ConsoleApp1\\Helper.cs",
+              "RelativeToolTip": "ConsoleApp1\\Helper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:17:54.418Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

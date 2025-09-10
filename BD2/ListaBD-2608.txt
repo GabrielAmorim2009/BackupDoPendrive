@@ -1,0 +1,29 @@
+📌1 – JOIN com múltiplos filtros 
+Liste todas as extrações feitas pela empresa "Vale do Rio Doce" que extraíram metais com ponto de fusão acima de 1000°C. 
+
+📌2 – Subquery com agregação 
+Liste o nome e o símbolo do metal que teve o maior valor por Kg registrado em toda a tabela de cotações.
+
+📌3 – Atualização condicional 
+Atualize o campo ValorDeMercado da empresa "Vale do Rio Doce" somando 10% ao valor atual, apenas se ela tiver extraído ouro no mês atual.
+
+📌4 – Subquery correlacionada 
+Liste os nomes das empresas que extraíram mais de 500 toneladas de qualquer metal em um único dia.
+
+📌5 – Subquery simples 
+Liste os nomes das empresas que extraíram ouro (AU) em qualquer data.
+
+📌6 – Agregação com GROUP BY 
+Liste o total de toneladas extraídas por cada empresa. 
+
+📌7 – Subquery com filtro por empresa 
+Liste os metais extraídos pela empresa "Barrick".
+
+📌8 – JOIN com filtro físico 
+Liste os nomes das empresas que extraíram metais com densidade superior a 15 g/cm³. 
+
+📌9 – Subquery com HAVING 
+Liste os metais que foram extraídos em mais de 3 ocasiões distintas. 
+
+📌10 – Subquery negativa
+Liste os nomes das empresas que nunca extraíram o metal cromo (CR). 

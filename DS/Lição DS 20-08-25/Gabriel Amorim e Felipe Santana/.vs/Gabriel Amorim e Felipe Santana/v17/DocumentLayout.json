@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Desktop\\Gabriel Amorim e Felipe Santana\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{904B5525-834E-4F1C-AD7B-A6E38FAF6F3A}|Gabriel Amorim e Felipe Santana\\Gabriel Amorim e Felipe Santana.csproj|c:\\users\\aluno\\desktop\\gabriel amorim e felipe santana\\gabriel amorim e felipe santana\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{904B5525-834E-4F1C-AD7B-A6E38FAF6F3A}|Gabriel Amorim e Felipe Santana\\Gabriel Amorim e Felipe Santana.csproj|solutionrelative:gabriel amorim e felipe santana\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\Gabriel Amorim e Felipe Santana\\Gabriel Amorim e Felipe Santana\\Program.cs",
+              "RelativeDocumentMoniker": "Gabriel Amorim e Felipe Santana\\Program.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\Gabriel Amorim e Felipe Santana\\Gabriel Amorim e Felipe Santana\\Program.cs",
+              "RelativeToolTip": "Gabriel Amorim e Felipe Santana\\Program.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAiwFMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:56:29.625Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

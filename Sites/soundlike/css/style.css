@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    font-family: "BUNGEE";
+    outline: 0;
+}
+body{
+    background-color: #161616;
+    margin: 0;
+}
+
+/*----------Header---------*/
+
+.header-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: black;
+    height: 70px;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 0 0 55px black;
+}
+.header-navbar a{
+    box-shadow: 0 0 12px black;
+}
+.logo-navbar{
+    height: 70px;
+    width: 70px;
+}
+.link-home, .link-conf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #212121;
+    padding: 5px;
+    border-radius: 50rem;
+    height: 50px;
+    width: 50px;
+}
+.home-navbar{
+    height: 60%;
+    width: 60%;
+    margin-bottom: 5px;
+    filter: grayscale(1);    
+}
+.conf-navbar{
+    height: 70%;
+    width: 70%;
+    filter: grayscale(1);
+}
+.link-home:hover .home-navbar, .link-conf:hover .conf-navbar{
+    filter: grayscale(0);
+    transition: .6s;
+}
+.link-listar, .link-cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #212121;
+    padding: 15px 25px;
+    border-radius: 50rem;
+    text-decoration: none;
+    color: #a5a5a5;
+}
+.link-listar:hover, .link-cadastrar:hover{
+    color: #0cc0df;
+    transition: .6s;    
+}
+.link-listar:active, .link-cadastrar:active, .link-home:active, .link-conf:active{
+    background: #000000;
+    transform: scale(0.90);
+    transition: .6s; 
+}
+.decoração-navbar{
+    background-image: linear-gradient(black 50%,rgb(12, 12, 12));
+    height: 30px;
+    width: 100vw;
+    box-shadow: 0 0 35px;
+}
+
+/*----------Header---------*/
+
+
+/*----------Home---------*/
+
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 87vh;
+}
+.main-home img{
+    height: 600px;
+    filter: opacity(0.3);
+    transition: .4s;
+}
+.main-home img:hover{
+    filter: opacity(1);
+}
+
+/*----------Home---------*/
+
+
+/*----------Cadastrar---------*/
+
+.container-cadastro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 87vh;
+}
+.container-cadastro h2{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.dados-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #2b2b2b;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+.dados-cadastro input{
+    width: 100%;
+    margin: 5px;
+    font-size: 22px;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px rgb(185, 185, 185);
+    background: transparent;
+    color: white;
+}
+.dados-cadastro input[type="date"]{
+    color: rgb(185, 185, 185);
+}
+.dados-cadastro [type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(0.6);
+}
+.dados-cadastro input:focus{
+    transition: .5s;
+    border-color: rgb(0, 217, 255);
+    color: rgb(0, 217, 255);
+}
+.dados-cadastro input::placeholder{
+    color: rgb(185, 185, 185);
+}
+.dados-cadastro input:focus::placeholder{
+    color: rgb(0, 217, 255);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1);
+    transition: .4s;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    filter: invert(0.5);
+}
+input[type="date"]::-webkit-calendar-picker-indicator:active {
+    transform: scale(0.2);
+}
+.dados-cadastro button{
+    width: 105%;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50rem;
+    margin-top: 20px;
+    background: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 15px black;
+    transition: .4s;
+}
+.dados-cadastro button:hover{
+    background-color: #0cc0df;
+    color: white;
+}
+.dados-cadastro button:active{
+    transform: scale(0.9);
+}
+
+/*----------Cadastrar---------*/
+
+
+/*----------Listar---------*/
+
+.h4-listar{
+    text-align: center;
+    width: 98vw;
+    margin: 0;
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-listar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    padding: 10px;
+}
+.div-input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    width: auto;
+    margin-right: 10px;
+}
+.input-group{
+    display: flex;
+}
+.form-listar input{
+    border: none;
+    padding: 10px;
+    border-radius: 50rem;
+    box-shadow: 0 0 15px black;
+}
+.btn-filtrar{
+    background: white;
+    color: black;
+    border-radius: 50rem;
+    border: none;
+    box-shadow: 0 0 15px black;
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn-filtrar:hover{
+    background-color: #b8b8b8;
+}
+.btn-filtrar:active{
+    transform: scale(0.85);
+}  
+.btn-lupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: none;
+    right: 15px;
+    cursor: pointer;
+}
+.lupa-pesquisa{
+    position: absolute;
+    
+    height: 25px;
+}
+.container-listar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 98vw;
+}
+.tabela-listar{
+    background: #2b2b2b;
+    border: none;
+    padding: 25px 17px 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    margin: 5px 0;
+    text-align: center;
+}
+.container-titulos{
+    background-color: rgb(0, 0, 0);
+    border: solid 2px yellow;
+}
+.titulos-listar{
+    background-color: white;
+    margin: 0;
+    width: 20%;
+    height: 50px;
+    box-shadow: 0 0 15px black;
+    font-size: 15px;
+}
+.dados-listar{
+    background-color: rgb(218, 218, 218);
+    margin: 0;
+    width: 20%;
+    height: 50px;
+    font-size: 15px;
+    box-shadow: 0 0 10px black;
+}
+.align-btns{
+    display: grid;
+    place-items: center;
+    height: 65px;
+}
+.btn-alterar, .btn-excluir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    transition: .4s;
+    margin: 6px;
+}
+.btn-excluir{
+    background: red;
+    cursor: pointer;
+}
+.btn-alterar{
+    background: orange;
+}
+.btn-alterar img{
+    height: 20px;
+}
+.btn-excluir img{
+    height: 20px;
+}
+.btn-excluir:hover, .btn-alterar:hover{
+    filter: brightness(0.5);
+}
+.btn-excluir:active, .btn-alterar:active{
+    transform: scale(0.8);
+}
+.card-excluir{
+    display: flex;
+    justify-content: center;
+
+    width: 99vw;
+}
+#cadsExSS{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: rgb(255, 168, 168);
+    border: solid 1px rgb(252, 106, 106);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 480px;
+}
+#cadsExCS{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: rgb(172, 255, 172);
+    border: solid 1px rgb(140, 248, 140);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 480px;
+}
+.nre{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+/*----------Listar---------*/
+
+
+/*----------Alterar---------*/
+
+.h4-alterar {
+    text-align: center;
+    color: white;
+}
+.main-alterar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-alterar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: #2b2b2b;
+    border: none;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    margin: 5px 0;
+    width: 420px;
+    text-align: center;
+    font-size: 18px;
+}
+.form-label{
+    color: rgb(177, 243, 255);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1);
+}
+.container-alterar button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 0 0 7px black;
+    margin-top: 20px;
+    width: 100%;
+    transition: .5s;
+}
+.container-alterar button:hover{
+    background-color: #0cc0df;
+}
+.container-alterar button:active{
+    transform: scale(0.9);
+}
+.col-md-4{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 4px 0;
+}
+.main-alterar input {
+    flex: auto;
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: solid 2.5px gray;
+    padding: 10px;
+    transition: .5s;
+}
+.main-alterar input:focus{
+    box-shadow: 0 0 20px black;
+    border-radius: 50rem;
+    border: solid 2px rgb(0, 217, 255);
+    color: rgb(0, 217, 255);
+    transition: .5s;
+}
+
+/*----------Alterar---------*/

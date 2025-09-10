@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel de Imagens</title>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.carrossel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.img1{
+
+}
+.img2{
+    filter: grayscale(2);
+}
+.img3{
+    filter: invert(1);
+}
+</style>
+
+</head>
+<body>
+
+  <div class="carrossel-container">
+    <div class="carrossel">
+      <img src="Paisagem Pixelada 2.jpg" class="img1">
+      <img src="Paisagem Pixelada 2.jpg" class="img2">
+      <img src="Paisagem Pixelada 2.jpg" class="img3">
+    </div>
+    <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+    <button class="next" onclick="mudarImagem(1)">&#10095;</button>
+  </div>
+
+  <script>
+    let indice = 0;
+
+function mudarImagem(direcao) {
+  const imagens = document.querySelectorAll('.carrossel img');
+  const totalImagens = imagens.length;
+
+  indice += direcao;
+
+  if (indice >= totalImagens) {
+    indice = 0;
+  }
+  if (indice < 0) {
+    indice = totalImagens - 1;
+  }
+
+  const novoValor = -indice * 100;
+  document.querySelector('.carrossel').style.transform = `translateX(${novoValor}%)`;
+}
+
+  </script>
+  
+</body>
+</html>

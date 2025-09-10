@@ -1,0 +1,179 @@
+-- 1) Selecione todos os dados (Id, Nome, ValorDeMercado) de todas as empresas existentes na tabela empresa;
+SELECT
+    empresa.`Id`,
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa;
+
+-- 2) Selecione todos os dados (Simbolo, Nome, Densidade, PesoAtomico, TempFunsao) de todos os metais existentes na tabela metal;
+SELECT
+    *
+FROM
+    metal;
+
+-- 3) Selecione todos os dados (Id, FK_Empresa_Id, FK_Metal_Simbolo, Data, Quantidade) de todas as extrações existentes na tabela extracao;
+SELECT
+    *
+FROM
+    extracao;
+
+-- 4) Selecione apenas o campo Nome da tabela empresa para as empresas que possuem o valor de mercado maior que 5000;
+SELECT
+    empresa.`Nome`,
+FROM
+    empresa
+WHERE
+    empresa.`ValorDeMercado` > 5000;
+
+-- 5) Selecione (Nome, Densidade, TempFusao) da tabela metal para os metais que possuem um peso atômico entre 50 e 100;
+SELECT
+    metal.`Nome`,
+    metal.`Densidade`,
+    metal.`TempFusao`
+FROM
+    metal
+WHERE
+    metal.`PesoAtomico` > 50 AND metal.`PesoAtomico` < 100;
+
+-- 6) Selecione (Nome, ValorDeMercado) da tabela empresa para as empresas que possuem o nome começando com a letra "A";
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.`Nome` LIKE "a%";
+
+-- 7) Selecione todos os dados da tabela metal para os metais que possuem uma densidade maior que 10 e um peso atômico menor que 100;
+SELECT
+    *
+FROM
+    metal
+WHERE
+    metal.`Densidade` > 10 AND metal.`PesoAtomico` < 100;
+
+-- 8) Selecione (Nome, ValorDeMercado) da tabela empresa para as empresas que possuem o nome começando com a letra "v" e terminando com a letra "e";
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.`Nome` LIKE "v%e";
+
+-- 9) Selecione todos os dados (Simbolo, Nome, Densidade, PesoAtomico, TempFunsao) da tabela metal para os metais que possuam como parte do nome a palavra "pra";
+SELECT
+    *
+FROM
+    metal
+WHERE
+    metal.`Nome` LIKE "%pra%";
+
+-- 10) Selecione (FK_Empresa_Id, FK_Metal_Simbolo, Data, QuantEmTonelada) da tabela extracao para as extrações que ocorreram no mês de janeiro de 2020 cuja quantidade é maior que 99 e o fk_Empresa_Id é igual a 1;
+SELECT
+    extracao.`FK_Empresa_Id`,
+    extracao.`FK_Metal_Simbolo`,
+    extracao.`Data`,
+    extracao.`QuantEmTonelada`
+FROM
+    extracao
+WHERE
+    MONTH(extracao.`Data`) = 01
+AND
+    YEAR(extracao.`Data`) = 2020
+AND
+    extracao.`QuantEmTonelada` > 99
+AND
+    extracao.`FK_Empresa_Id` = 1; 
+
+-- 11) Selecione o Nome e o PesoAtomico do metal que possui o maior peso atômico;
+SELECT
+    metal.`Nome`,
+    metal.`PesoAtomico`
+FROM
+    metal
+WHERE
+    metal.`PesoAtomico` = (
+SELECT
+    MAX(metal.`PesoAtomico`) AS MaiorPesoAtomico
+FROM
+    metal
+);
+
+-- 12) Selecione o Nome e o ValorDeMercado da empresa que possui o menor valor de mercado;
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.`ValorDeMercado` = (
+SELECT
+    MIN(empresa.`ValorDeMercado`)
+FROM
+    empresa
+);
+
+-- 13) Selecione o Nome e o ValorDeMercado da empresa que possui o maior valor de mercado;
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.`ValorDeMercado` = (
+SELECT
+    MAX(empresa.`ValorDeMercado`)
+FROM
+    empresa
+);  
+
+-- 14) Crie um comando que mostre a diferença entre o maior e o menor valor de mercado das empresas;
+SELECT
+    (SELECT MAX(empresa.`ValorDeMercado`) AS MenorValor FROM empresa) - (SELECT MIN(empresa.`ValorDeMercado`) AS MenorValor FROM empresa) AS Diferenca
+FROM
+    empresa
+GROUP BY
+    Diferenca;
+
+-- 15) Selecione o Nome e o ValorDeMercado da empresa que possui o nome começando com a letra "n" e terminando com a letra "t";
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.`Nome` LIKE "n%t";
+
+-- 20) Qual é o valor médio da cotação do metal "Tungstênio"?
+SELECT
+    AVG(cotacao.`ValorKg`)
+FROM
+    cotacao
+WHERE
+    cotacao.`FK_Metal_Simbolo` = "W";
+
+-- 22) Liste os dados da tabela metal, ordenados pelo peso atômico em ordem decrescente.
+SELECT
+    *
+FROM
+    metal
+ORDER BY
+    metal.`PesoAtomico` DESC;
+
+-- 23) Liste os dados da tabela empresa, ordenados pelo valor de mercado em ordem crescente.
+SELECT
+    *
+FROM
+    empresa
+ORDER BY
+    empresa.`ValorDeMercado` ASC;
+
+-- 24) Liste os dados da tabela extracao, ordenados pela data em ordem decrescente.
+SELECT
+    *
+FROM
+    extracao
+ORDER BY
+    extracao.`Data` DESC;

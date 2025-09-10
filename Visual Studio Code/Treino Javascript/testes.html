@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão para Mostrar Elemento</title>
+    <style>
+        #elemento {
+            display: none; /* Inicialmente o elemento está oculto */
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão para exibir o elemento -->
+    <button id="mostrarElemento" onclick="mostrar()">Mostrar Elemento</button>
+
+    <!-- O elemento que será mostrado -->
+    <div id="elemento">
+        Este é o elemento que apareceu ao clicar no botão!
+    </div>
+
+    <button onclick="modoEscuro()">Modo escuro</button>
+
+    <input type="color" name="" id="cor" onchange="mudarColor()">
+
+    <script>
+        function modoEscuro() {
+            if (document.body.style.backgroundColor != 'darkgray'){
+                document.body.style.backgroundColor = 'darkgray';
+            }
+            else {
+                document.body.style.backgroundColor = 'white';
+            }
+        }
+
+        function mostrar() {
+            // Alterando a propriedade 'display' do elemento para 'block' para mostrar
+            if (elemento.style.display != 'block') {
+                elemento.style.display = 'block'; // Torna a div visível
+            } else if (elemento.style.display != 'none') {
+                elemento.style.display = 'none'; // Torna a div invisível
+            }
+        };
+
+        function mudarColor() {
+            let color = document.getElementById('cor').value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>

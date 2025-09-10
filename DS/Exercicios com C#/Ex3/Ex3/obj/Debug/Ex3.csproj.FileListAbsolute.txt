@@ -1,0 +1,10 @@
+D:\DS\Exercicios com C#\Ex3\Ex3\obj\Debug\Ex3.csproj.AssemblyReference.cache
+D:\DS\Exercicios com C#\Ex3\Ex3\obj\Debug\Ex3.csproj.CoreCompileInputs.cache
+H:\DS\Exercicios com C#\Ex3\Ex3\bin\Debug\Ex3.exe.config
+H:\DS\Exercicios com C#\Ex3\Ex3\bin\Debug\Ex3.exe
+H:\DS\Exercicios com C#\Ex3\Ex3\bin\Debug\Ex3.pdb
+H:\DS\Exercicios com C#\Ex3\Ex3\obj\Debug\Ex3.csproj.AssemblyReference.cache
+H:\DS\Exercicios com C#\Ex3\Ex3\obj\Debug\Ex3.csproj.CoreCompileInputs.cache
+H:\DS\Exercicios com C#\Ex3\Ex3\obj\Debug\Ex3.exe
+H:\DS\Exercicios com C#\Ex3\Ex3\obj\Debug\Ex3.pdb
+H:\DS\Exercicios com C#\Ex3\Ex3\obj\Debug\Ex3.exe.config

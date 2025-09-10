@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\Gabriel Amorim e Felipe Santana\Gabriel Amorim e Felipe Santana\bin\Debug\Gabriel Amorim e Felipe Santana.exe.config
+C:\Users\Aluno\Desktop\Gabriel Amorim e Felipe Santana\Gabriel Amorim e Felipe Santana\bin\Debug\Gabriel Amorim e Felipe Santana.exe
+C:\Users\Aluno\Desktop\Gabriel Amorim e Felipe Santana\Gabriel Amorim e Felipe Santana\bin\Debug\Gabriel Amorim e Felipe Santana.pdb
+C:\Users\Aluno\Desktop\Gabriel Amorim e Felipe Santana\Gabriel Amorim e Felipe Santana\obj\Debug\Gabriel Amorim e Felipe Santana.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\Gabriel Amorim e Felipe Santana\Gabriel Amorim e Felipe Santana\obj\Debug\Gabriel Amorim e Felipe Santana.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\Gabriel Amorim e Felipe Santana\Gabriel Amorim e Felipe Santana\obj\Debug\Gabriel Amorim e Felipe Santana.exe
+C:\Users\Aluno\Desktop\Gabriel Amorim e Felipe Santana\Gabriel Amorim e Felipe Santana\obj\Debug\Gabriel Amorim e Felipe Santana.pdb

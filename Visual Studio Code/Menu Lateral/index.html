@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-Lateral</title>
+    
+<style>
+    body{
+        margin: 0;
+    }
+    div{
+        top: 84px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 0;
+        margin: 0;
+        background-color: rgb(8, 8, 8);
+        width: 60px;
+        height: 100vh;
+        box-shadow: 0px 0px 15px;
+    }
+    div:hover{
+        width: 200px;
+        align-content: space-between;
+        align-items: flex-start;
+        transition: ease 0.5s;
+    }
+    div:hover .link2{
+        display: inline;
+    }
+    div:hover nav{
+        justify-content: space-between;
+        margin: 0px 10px;
+        width: 90%;
+    }
+    .link2{
+        display: none;
+        color: white;
+        font-size: 19px;
+        font-weight: bold;
+        margin: 0;
+        font-family: Arial;
+        text-decoration: none;
+    }
+    img, .link{
+        width: 40px;
+        height: 40px;
+    }
+    img{
+        filter: invert(1);
+    }
+    img:hover{
+        transition: 0.3s;
+        filter: invert(0.5);
+    }
+    .link2:hover{
+        transition: 0.3s;
+        color: gray;
+    }
+    nav{
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    header{
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+        background-color: black;
+        box-shadow: 0px 0px 15px;
+    }
+    .link-header{
+        margin: 15px 0px;
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+        text-decoration: underline transparent;
+        font-family: arial;
+        font-weight: bold;
+    }
+    .link-header:hover{
+        transition: 0.4s;
+        text-decoration: underline 3px;
+    }
+</style>
+
+</head>
+<body>
+    
+    <header>
+        <a href="" class="link-header">Home</a>
+        <a href="" class="link-header">Produtos</a>
+        <a href="" class="link-header">Sobre</a>
+        <a href="" class="link-header">Perfil</a>
+    </header>
+    <div>
+        <nav>
+            <a href="" class="link"><img src="Três Barras.png" alt=""></a>
+            <a class="link2" href="">Menu</a>
+        </nav>
+        <nav>
+            <a href="" class="link"><img src="Configurações_Logo-removebg-preview.png" alt=""></a>
+            <a class="link2" href="">Configurações</a>
+        </nav>
+        <nav>
+            <a href="" class="link"><img src="Perfil_Logo.png" alt=""></a>
+            <a class="link2" href="">Perfil</a>
+        </nav>
+        <nav>
+            <a href="" class="link"><img src="Istagram-Logo Preta.png" alt=""></a>
+            <a class="link2" href="">Instagram</a>
+        </nav>
+        <nav>
+            <a href="" class="link"><img src="Whatsapp-Logo Preta.png" alt=""></a>
+            <a class="link2" href="">Whatsapp</a>
+        </nav>
+    </div>
+
+</body>
+</html>

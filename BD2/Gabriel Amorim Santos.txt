@@ -1,0 +1,195 @@
+Nome: Gabriel Amorim Santos
+
+
+
+Lista de Exercícios – Banco de Dados
+
+Base: Empresa, Metais, Extração e Cotação
+
+📌1 – Consulta simples
+Liste todos os metais cadastrados na base de dados, exibindo símbolo, nome e temperatura de fusão.
+📃Resposta:
+SELECT
+    metal.Simbolo,
+    metal.Nome,
+    metal.TempFusao
+FROM
+    metal;
+
+
+📌2 – Filtro com cláusula WHERE
+Liste todas as extrações de prata (Ag) realizadas pela empresa com ID 2.
+📃Resposta:
+SELECT
+    empresa.Nome,
+    metal.Simbolo,
+    extracao.Id,
+    extracao.Data,
+    extracao.QuantEmTonelada
+FROM
+    empresa,
+    metal,
+    extracao
+WHERE
+    empresa.Id = 2
+AND
+    metal.Simbolo = "AG"
+AND
+    empresa.Id = extracao.FK_Empresa_Id
+AND
+    metal.Simbolo = extracao.FK_Metal_Simbolo;
+
+
+📌3 – JOIN entre duas tabelas
+Liste o nome das empresas e o nome dos metais extraídos por elas.
+📃Resposta:
+SELECT
+    empresa.nome,
+    extracao.`FK_Metal_Simbolo`,
+    metal.nome
+FROM
+    metal,
+    empresa
+INNER JOIN
+    extracao ON empresa.`Id` = extracao.`FK_Empresa_Id`
+GROUP BY
+    empresa.`Id`, extracao.`FK_Metal_Simbolo`, metal.`Nome`;
+
+
+📌4 – JOIN com função de agregação
+Liste o total de toneladas extraídas por cada empresa, ordenando do maior para o menor.
+📃Resposta:
+SELECT
+    empresa.`Nome`,
+    SUM(extracao.QuantEmTonelada) AS Total
+FROM
+    extracao
+INNER JOIN
+    empresa ON empresa.`Id` = extracao.`FK_Empresa_Id`
+GROUP BY
+    empresa.`Id`
+ORDER BY
+    Total DESC;
+
+
+📌5 – Subquery + Join + Filtro por data
+Liste as extrações de ouro feitas nos últimos 5 dias do mês pela empresa "Vale do Rio Doce".
+📃Resposta:
+SELECT
+    *
+FROM 
+    extracao
+INNER JOIN
+    empresa ON extracao.fk_empresa_id = empresa.id 
+INNER JOIN
+    metal ON extracao.fk_metal_simbolo = metal.simbolo 
+WHERE
+    empresa.nome = "Vale do Rio Doce" 
+AND
+    metal.simbolo = "Au" 
+AND
+    extracao.data >= '2018-03-26' 
+AND
+    extracao.data <= '2018-03-31';
+
+📌6 – Subquery com DELETE
+Exclua todas as extrações de prata (Ag) da empresa " Mosaic" realizadas nos últimos 5 dias do mês do ano de 2021.
+📃Resposta:
+DELETE FROM 
+    extracao
+WHERE
+    fk_metal_simbolo = 'Ag'
+AND
+    fk_empresa_id = (SELECT id FROM empresa WHERE nome = 'Mosaic')
+AND
+    YEAR(data) = 2021
+AND
+    DAY(data) BETWEEN 26 AND 31;
+
+
+📌7 – Cálculo do valor financeiro da extração
+Liste as extrações de todos os metais feitas no último mês do ano de 2019, mostrando o nome da empresa, o nome do metal, a quantidade extraída (em toneladas), o valor por Kg e o valor total estimado da extração.
+📃Resposta:SELECT 
+    empresa.nome, 
+    metal.simbolo, 
+    extracao.data, 
+    extracao.QuantEmTonelada, 
+    cotacao.ValorKg, 
+    (extracao.QuantEmTonelada * cotacao.ValorKg) AS valor_total
+FROM
+    extracao
+INNER JOIN 
+    empresa ON extracao.fk_empresa_id = empresa.id
+INNER JOIN 
+    metal ON extracao.fk_metal_simbolo = metal.simbolo
+INNER JOIN 
+    cotacao ON extracao.fk_metal_simbolo = cotacao.fk_metal_simbolo
+WHERE 
+    extracao.data BETWEEN '2019-12-01' AND '2019-12-31';
+
+
+📌8 – JOIN com múltiplos filtros
+Liste todas as extrações feitas pela empresa "Vale do Rio Doce" que extraíram metais com ponto de fusão acima de 1000°C.
+📃Resposta:
+SELECT
+    empresa.`Nome`,
+    metal.`TempFusao`,
+    metal.`Simbolo`
+FROM
+    extracao
+INNER JOIN
+    empresa ON empresa.`Id` = extracao.`FK_Empresa_Id`
+INNER JOIN
+    metal ON metal.`Simbolo` = extracao.`FK_Metal_Simbolo`
+WHERE
+    empresa.`Nome` = "Vale do Rio Doce"
+AND
+    metal.`TempFusao` >= 1000
+GROUP BY
+    metal.`Simbolo`;
+
+
+📌9 – Subquery com agregação
+Liste o nome e o símbolo do metal que teve o maior valor por Kg registrado em toda a tabela de cotações.
+📃Resposta:
+SELECT
+    metal.Nome,
+    metal.Simbolo,
+    cotacao.ValorKg
+FROM
+    cotacao
+INNER JOIN
+    metal ON metal.Simbolo = cotacao.FK_Metal_Simbolo
+WHERE
+    cotacao.ValorKg = (
+        SELECT MAX(ValorKg)
+        FROM cotacao
+    );
+
+
+📌10 – Atualização condicional
+Atualize o campo ValorDeMercado da empresa "Vale do Rio Doce" somando 10% ao valor atual, apenas se ela tiver extraído ouro no mês atual.
+📃Resposta:
+UPDATE empresa
+SET ValorDeMercado = ValorDeMercado * 1.1
+WHERE nome = "Vale do Rio Doce"
+AND EXISTS(
+    SELECT 1 FROM extracao
+    WHERE fk_empresa_id = empresa.id
+    AND fk_metal_simbolo = "Au"
+    AND MONTH(data) = MONTH(CURRENT_DATE())
+    AND YEAR(data) = YEAR(CURRENT_DATE())
+);
+
+
+📌11 – Subquery correlacionada
+Liste os nomes das empresas que extraíram mais de 500 toneladas de qualquer metal em um único dia.
+📃Resposta:
+SELECT t.nome, t.data, t.total_toneladas
+FROM (
+    SELECT empresa.nome, extracao.data, SUM(extracao.QuantEmTonelada) AS total_toneladas
+    FROM empresa
+    INNER JOIN extracao ON empresa.id = extracao.fk_empresa_id
+    GROUP BY empresa.nome, extracao.data
+) AS t
+WHERE t.total_toneladas > 500;

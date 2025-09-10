@@ -1,0 +1,7 @@
+D:\DS\Aula DS 03-09-25\Aula DS 03-09-25\bin\Debug\Aula DS 03-09-25.exe.config
+D:\DS\Aula DS 03-09-25\Aula DS 03-09-25\bin\Debug\Aula DS 03-09-25.exe
+D:\DS\Aula DS 03-09-25\Aula DS 03-09-25\bin\Debug\Aula DS 03-09-25.pdb
+D:\DS\Aula DS 03-09-25\Aula DS 03-09-25\obj\Debug\Aula DS 03-09-25.csproj.AssemblyReference.cache
+D:\DS\Aula DS 03-09-25\Aula DS 03-09-25\obj\Debug\Aula DS 03-09-25.csproj.CoreCompileInputs.cache
+D:\DS\Aula DS 03-09-25\Aula DS 03-09-25\obj\Debug\Aula DS 03-09-25.exe
+D:\DS\Aula DS 03-09-25\Aula DS 03-09-25\obj\Debug\Aula DS 03-09-25.pdb

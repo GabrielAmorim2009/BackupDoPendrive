@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            outline: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+        button{
+            background-color: white;
+            border: solid black 2px;
+            height: 60px;
+            width: 200px;
+            cursor: pointer;
+        }
+        button:hover{
+            transition: 0.4s;
+            background-color: rgb(189, 189, 189);
+        }
+        nav{
+            display: none;
+            background-color: gray;
+            height: 200px;
+            border: solid black 2px;
+            border-top: none;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div{
+            margin-top: 200px;
+            background-color: aqua;
+            padding: 10px;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            height: 63.5px;
+            border: solid black 2px;
+        }
+        a:hover{
+            background-color: rgb(88, 88, 88);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button id="btn" onclick="ativarDropdown()">Opções</button>
+    <nav id="drop">
+        <main>
+        <a href="">Teste1</a>
+        <a href="">Teste2</a>
+        <a href="">Teste3</a>
+        </main>
+    </nav>
+    </div>
+
+    <script>
+        function ativarDropdown() {
+            if (document.getElementById('drop').style.display != "block") {
+                document.getElementById('drop').style.display = "block"
+            }
+            else if (document.getElementById('drop').style.display != "none") {
+                document.getElementById('drop').style.display = "none"
+            }
+        }
+    </script>
+
+</body>
+</html>

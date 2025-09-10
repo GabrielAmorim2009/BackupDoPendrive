@@ -1,0 +1,107 @@
+----1-----/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/----------
+SELECT 
+    metal.`Nome`, 
+    cotacao.`Data`, 
+    cotacao.`ValorKg` 
+FROM 
+    cotacao, 
+    metal 
+WHERE 
+    metal.`Simbolo`= cotacao.`FK_Metal_Simbolo` 
+AND 
+    metal.nome = 'Ouro' 
+ORDER BY 
+    cotacao.`ValorKg` DESC
+LIMIT 1;
+
+----2-----/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/----------
+SELECT 
+    metal.`Nome`, 
+    cotacao.`Data`, 
+    cotacao.`ValorKg` 
+FROM 
+    metal 
+    INNER JOIN
+    cotacao ON metal.`Simbolo` = cotacao.`FK_Metal_Simbolo`
+WHERE 
+    metal.`Simbolo`= cotacao.`FK_Metal_Simbolo` 
+AND 
+    metal.nome = 'Ouro' 
+ORDER BY 
+    cotacao.`ValorKg` DESC
+LIMIT 1;
+
+----3-----/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/----------
+(SELECT
+    MAX(cotacao.`ValorKg`) AS Maior_Cotação
+FROM
+    cotacao
+WHERE
+    `FK_Metal_Simbolo`= 'CU'
+LIMIT
+    1)
+
+----4-----/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/----------
+SELECT
+    m.`Nome`,
+    c.`Data`,
+    c.`ValorKG`,
+    m.`Simbolo`
+FROM    
+    metal as m
+        INNER JOIN
+    cotacao as c ON m.`Simbolo` = c.`FK_Metal_Simbolo`
+WHERE
+    m.`Nome` = 'Cobre' AND
+    c.`ValorKg` = (SELECT MAX(cotacao.`ValorKg`) FROM cotacao WHERE `FK_Metal_Simbolo` = m.`Simbolo`)
+
+----5-----/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/----------
+SELECT
+    m.`Simbolo`
+    m.`Nome`,
+    c.`Data`,
+    c.`ValorKG`,
+FROM    
+    metal as m
+        INNER JOIN
+    cotacao as c ON m.`Simbolo` = c.`FK_Metal_Simbolo`
+WHERE
+    c.`ValorKg` = (SELECT MAX(cotacao.`ValorKg`) FROM cotacao)
+
+----6-----/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/----------
+SELECT
+    empresa.`Nome`,
+    SUM(extracao.`QuantEmTonelada`) AS Total
+
+FROM
+    empresa
+    INNER JOIN
+    extracao ON empresa.`Id` = extracao.`FK_Empresa_Id`
+WHERE
+    extracao.`FK_Metal_Simbolo` = 'AU'
+    AND
+dw
+GROUP BY
+    empresa.`Nome`
+ORDER BY
+    Total DESC;
+
+----7-----/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/--------------------/---//---/----------
+SELECT metal.`Nome`, cotacao.`ValorKg`, cotacao.`Data` FROM cotacao, metal WHERE metal.`Nome` = 'Ouro' AND YEAR(`Data`) = '2020';
+SELECT * FROM metal;
+
+SELECT
+    metal.`Nome`,
+    SUM(cotacao.`ValorKg` / 1000) AS ValorTon
+FROM 
+    metal
+    INNER JOIN
+    cotacao ON metal.`Simbolo` = cotacao.`FK_Metal_Simbolo`
+WHERE
+    YEAR(`Data`) = '2020'
+    AND
+    metal.`Nome` = 'Ouro'
+GROUP BY
+    metal.`Nome`
+ORDER BY
+    metal.`Nome` DESC;

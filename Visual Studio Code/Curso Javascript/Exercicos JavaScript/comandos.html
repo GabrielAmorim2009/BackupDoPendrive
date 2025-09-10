@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos JS</title>
+    <link rel="shortcut icon" href="img/JS logo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+        body{
+            font-family: "Bungee";
+            font-weight: bold;
+        }
+        h1{
+            font-family: "Bungee";
+            text-align: center;
+        }
+        main{
+            width: 100vw;
+            position: fixed;
+        }
+        div{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: -20px;
+        }
+        button{
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            padding: 10px;
+        }
+        #arial{
+            z-index: 2;
+        }
+        #bungee{
+            z-index: 1;
+        }
+        span{
+            color: rgb(94, 93, 93);
+            padding: 10px;
+            border: solid 1px rgb(180, 180, 180);
+        }
+    </style>
+</head>
+<body>
+    <h1>Comandos Javascript</h1>
+    <main>
+    <div>
+        <button id="arial" onclick="mudarArial()">Arial</button>
+        <button id="bungee" onclick="mudarBungee()">Bungee</button>
+    </div>
+    </main>
+    <br>
+    <br>
+    <p><span>let num1 = 10; let</span> ---------Define variaveis globais, que podem ser atualizadas<br>
+        <span>var</span> ---------------------------Define variaveis, que podem ser sobreescritas<br>
+            <span>const</span>--------------------------Define constantes, que não podem ser alteradas</p>
+    <hr>
+    <p><span>let nota > 5 ? 'Aprovado' : 'Reprovado';</span><br>
+    .......... ^ ................. ^ ...................^<br>
+    se for verdade . acontece isso . senão isso</p>
+    <hr>
+    <p><span>alert('A soma dos valores é ' + s);</span> . . <= . . use o '+' para juntar uma variavel com o texto<br>
+        <span>alert(`${nome} tem ${idade} anos`);</span> . . <= . . você tambem pode usar crase ao inves de aspas</p>
+    <hr>
+    <p><span>document.getElementById('soma');</span> . . <= . . para pegar algo do HMTL pelo id<br><br>
+       <span>document.getElementsByTagName('nome da tag')[0]</span> . . <= . . para pegar algo de HTML pela tag<br><br>
+       <span>document.getElementsByName('nome do name')[0]</span> . . <= . . para pegar algo de HTML pelo name<br><br>
+       <span>document.getElementsByClass('nome da classe')[0]</span> . . <= . . para pegar algo de HTML pela classe<br><br>
+       Entre colchetes o "0" significa q ele vai pegar o primeiro elemento q se encaixa, "1" o segundo e etc... <br><br>
+       <span>document.querySelector(tagHTML#id ou .classe)</span></p>
+    <hr>
+    <p> <span>Number.parseInt</span> = converter para usar numero inteiro<br><br>
+        <span>Number.parseFloat</span> = converter para usar numero com virgula<br><br>
+        <span>Number</span> = deixar o sistema converter pelo q ele achar melhor<br><br>
+        <span>String(variavel)</span> converter pra string<br><br>
+        <span>(number + number)</span> para adição<br><br>
+        <span>(string + string)</span> para concatenar</p>
+    <hr>
+    <p> <span>variavel.Length</span> = limitar o tamanho de string <br><br>
+        <span>variavel.toUpperCase()</span> = deixar a string maiuscula <br><br>
+        <span>variavel.toLowerCase()</span> = deixar a string minuscula <br><br>
+        <span>variavel.toFixed(2)</span> = limita quantas casas decimais vai ter o numero <br><br>
+        <span>variavel.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</span><br>
+                                                     ^ . . . . . . . . . . . ^   <br>
+                                          mostra em valor monetário</p>
+    <hr>
+    <p><span>3 += 3 aumenta 3 no 3</span> <br><br>
+        <span>3 -= 3 tira 3 do 3</span> . . .               no js usa -= para diminuir e += para aumentar</p>
+    <hr>
+    <p> function mudarFundo() { <br>
+            document.body.classList.add('fundo-claro'); . <=  . Adiciona a classe que altera o fundo, a classe ja tem que estar criada no css <br>
+        }</p>
+    <hr>
+    <p> do {<br>
+        valor1 = parseFloat(prompt("Nota 1")); <br>
+        } while (isNaN(valor1) || valor1 < 1 || valor1 > 10);</p>
+    <hr>
+    <p><span>InnerText</span> . <= . Retorna ou define o texto visível de um elemento HTML. Ele ignora tags HTML e considera o estilo CSS (como display: none). ex: Quando você quer apenas o texto que o usuário vê na tela.<br><br>
+       <span>InnerHTML</span> . <= . Retorna ou define o conteúdo HTML interno de um elemento. Inclui tags HTML dentro do elemento, ex: Quando você quer acessar ou mudar o HTML de um elemento (incluindo tags).<br><br>
+       <span>value</span> . <= . Vai pegar o valor do item, ex: pega a cor do input color</p>
+    <hr>
+    <p><span>let imagem = document.createElement('img')</span> . <= . Vai criar um elemento HTML dinamicamente<br><br>
+       <span>imagem.setAttribute('id','foto')</span> . <= . Cria um atributo para algum elemento HTML<br>
+        . . . . . . . . . . . . . . . . . . . . . . . . ^ . . . . ^<br>
+        . . . . . . . . Nome do atributo . . Oque vai ter no atributo</p>
+    <script>
+        function mudarArial() {
+            arial.style.zIndex = "1"
+            bungee.style.zIndex = "2"
+            document.body.style.fontFamily = "Arial"
+        }
+        function mudarBungee() {
+            arial.style.zIndex = "2"
+            bungee.style.zIndex = "1"
+            document.body.style.fontFamily = "Bungee"
+        }
+    </script>
+</body>
+</html>

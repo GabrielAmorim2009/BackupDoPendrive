@@ -1,0 +1,73 @@
+-- *Crie o comando que exiba o piloto com o maior salário total;
+-- **SELECT, FROM, ORDER BY, LIMIT, Operador +;
+SELECT 
+    piloto.`NomePiloto`,
+    (piloto.`SalarioPiloto` + piloto.`Gratificacao`) as sal_total    
+FROM
+    piloto
+ORDER BY
+    sal_total DESC
+LIMIT 1;
+
+-- **SELECT, FROM, Operador +, MAX, WHERE;
+SELECT     
+    MIN((piloto.`SalarioPiloto` + piloto.`Gratificacao`)) as maior_salario
+FROM
+    piloto;
+
+SELECT 
+    piloto.`NomePiloto`,
+    (piloto.`SalarioPiloto` + piloto.`Gratificacao`) as sal_total    
+FROM
+    piloto
+WHERE
+   (piloto.`SalarioPiloto` + piloto.`Gratificacao`) = (
+    SELECT     
+        MAX((piloto.`SalarioPiloto` + piloto.`Gratificacao`)) as maior_salario
+    FROM
+        piloto
+   );
+
+
+-- *Crie um comando SQL que exiba todos os pilotos que possuem um salário total maior que 3000.00;
+-- **SELET, FROM, WHERE
+SELECT 
+    *,
+    (piloto.`SalarioPiloto` + piloto.`Gratificacao`) as sal_total  
+FROM
+    piloto
+WHERE
+    piloto.`SalarioPiloto` + piloto.`Gratificacao` > 10000.00;
+
+-- *Crie um comando SQL que conte o número total de pilotos cadastrados no banco;
+-- **SELET, FROM, COUNT
+SELECT 
+    COUNT(*) as total_pilotos 
+FROM 
+    piloto;
+
+-- *Crie um comando SQL que conte o número total de pilotos da VARIG;
+-- **SELET, FROM, COUNT, WHERE
+SELECT
+    COUNT(*) as quant_p_varig
+FROM
+    piloto,
+    companhiaaerea
+WHERE
+    piloto.`CodigoCompanhia` = companhiaaerea.`CodigoCompanhia`
+    AND
+    companhiaaerea.`NomeCompanhia` = "VARIG";
+
+-- *Crie um comando SQL que exiba quais Pilotos conduziram quais Aviões em cada Escala, e qual foi o Modelo do avião conduzido.
+
+SELECT
+    escalas.`CodigoVoo`,
+    escalas.`DataEscala`,
+    piloto.`NomePiloto`,
+    aviao.`ModeloAviao`
+FROM
+    escalas, piloto, aviao
+WHERE
+    piloto.`CodigoPiloto` = escalas.`CodigoPiloto`
+    AND
+    escalas.`CodigoAviao` = aviao.`CodigoAviao`;

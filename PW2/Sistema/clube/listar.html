@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clubes</title>
+    <link rel="shortcut icon" href="/img/Betano.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h1 class="titulo">Cadastro de Clubes de Futebol</h1>
+
+<form id="clubeForm" class="formCadastro">
+    <input type="text" id="nome" placeholder="Nome do Clube" required>
+    <input type="text" id="estadio" placeholder="Estádio">
+    <input type="number" id="capacidade_estadio" placeholder="Capacidade do Estádio">
+    <input type="number" id="num_titulos" placeholder="Número de Títulos" required>
+    <button type="submit" class="btnCadastro">Adicionar Clube</button>
+</form>
+
+<table id="tabelaClubes">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Estádio</th>
+            <th>Capacidade</th>
+            <th>Títulos</th>
+            <th>Ações</th> <!-- Nova coluna -->
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

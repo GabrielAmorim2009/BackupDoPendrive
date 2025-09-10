@@ -1,0 +1,16 @@
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\bin\Debug\net8.0-windows\LIstBox.exe
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\bin\Debug\net8.0-windows\LIstBox.deps.json
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\bin\Debug\net8.0-windows\LIstBox.runtimeconfig.json
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\bin\Debug\net8.0-windows\LIstBox.dll
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\bin\Debug\net8.0-windows\LIstBox.pdb
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.Form1.resources
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.csproj.GenerateResource.cache
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.GeneratedMSBuildEditorConfig.editorconfig
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.AssemblyInfoInputs.cache
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.AssemblyInfo.cs
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.csproj.CoreCompileInputs.cache
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.dll
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\refint\LIstBox.dll
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.pdb
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\LIstBox.genruntimeconfig.cache
+D:\DS\Exercicios Aula 2\LIstBox\LIstBox\obj\Debug\net8.0-windows\ref\LIstBox.dll

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/SCORPION.png" type="image/x-icon">
+
+<!--StyleBackground-->
+<style>
+    body{
+        background-image: url(img/Paisagem\ Floresta\ à\ Noite.png);
+    }
+</style>
+<!--StyleBackground-->
+
+<!--StyleNavbar-->
+<style>
+    .fixed1{
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        margin: -8px;
+    }
+    .navbar1{
+        background-color: rgba(0, 0, 0, 0.322);
+        width: 100vw;
+    }
+    .navbar2{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 45px;
+        size: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    img{
+        width: 80px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 22px;
+    }
+
+
+    .home{
+        padding: 11px;
+        border-radius: 22px;
+        color: rgb(138, 156, 255);
+        background-color: rgba(0, 0, 0, 0.473);
+    }
+    .home:hover{
+        transition: all 0.3s;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+
+    .pesquisa1{
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-radius: 25px;
+        padding: 5px;
+        padding-bottom: 6px;
+        padding-left: 6px;
+    }
+    input[type=search]{
+        border-color: transparent;
+        background-color: transparent;
+        margin-top: 2.5px;
+        margin-left: 2px;
+        color: rgb(0, 0, 0);
+    }
+    input[type=search]::placeholder{
+        color: black;
+    }
+    .lupa{
+        position: relative;
+        width: 20px;
+        filter: invert(0);
+        margin-left: 7px;
+        padding-right: 3px;
+        top: 1px;
+    }
+    .lupa:hover{
+        filter: invert(0.2);
+    }
+    textarea:focus, input:focus, select:focus {
+        outline: 0; 
+    }
+    .logo{
+        top: 25px;
+        margin-left: 1.5%;
+    }
+    .login{
+        margin-right: 2.5%;
+        margin-top: 40px;
+    }
+    .pesq{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+<!--StyleNavbar-->
+
+<!--StyleConteudo-->
+<style>
+    .conteudo{
+        margin-right: 60%;
+        margin-left: 3%;
+        margin-top: 70px;
+        background-color: transparent;
+    }
+    h1{
+        font-size: 55px;
+        color: white;
+    }
+    p{
+        font-size: 20px;
+        color: white;
+    }
+    .avalie{
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        font-size: 17px;
+        width: 80px;
+        height: 45px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .avalie:hover{
+        transition: 0.3s;
+        border-color: rgb(134, 134, 134);
+        color: rgb(134, 134, 134);
+    }
+    .explore{
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        font-size: 17px;
+        width: 80px;
+        height: 45px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .explore:hover{
+        transition: 0.3s;
+        border-color: rgb(134, 134, 134);
+        color: rgb(134, 134, 134);
+    }
+    .rst{
+        background-color: black;
+    }
+</style>
+<!--StyleConteudo-->
+
+<!--StyleSegundaNavbar-->
+<style>
+    .navbar3{
+        padding: 10px;
+    }
+    .div1{
+        background-color: white;
+    }
+    .element1{
+        margin-left: 2%;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        text-decoration: underline rgba(255, 255, 255, 0);
+    }
+    .element1:hover{
+        transition: 0.3s;
+        text-decoration: underline white;
+        background-color: rgb(24, 24, 24);
+    }
+    .conf{
+        float: right;
+        position: relative;
+        top: 7px;
+        margin-right: 2%;
+    }
+    .conf:hover{
+        transition: 0.3s;
+        filter: invert(0.2);
+    }
+    .confimg{
+        width: 40px;
+    }
+</style>
+
+    <!--StyleDropdown-->
+    <style>
+        .dropbtn {
+          background-color: #000000;
+          color: rgb(255, 255, 255);
+          border-radius: 10px;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+          background-color: rgb(24, 24, 24);
+          transition: 0.3s;
+        }
+        .mv{
+            position: relative;
+            left: 20px;
+            text-decoration: underline rgba(255, 255, 255, 0);
+        }
+        .mv:hover{
+            transition: 0.3s;
+            text-decoration: underline white;
+        }
+        .bt{
+            display: flex;
+            align-items: start;
+        }
+        .dropdw{
+            position: relative;
+            width: 12px;
+            filter: invert(1);
+            left: 7px;
+            top: 2.5px;
+        }
+        </style>
+    <!--StyleDropdown-->
+
+<!--StyleSegundaNavbar-->
+
+<!--StyleConteudo2-->
+<style>
+    .f7{
+        margin: 20px; 
+        border-color: black;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 4px;
+        cursor: pointer;
+    }
+    .f7:hover{
+        transition: 0.3s;
+        border-color: gray;
+    }
+    .quadrados{
+        display: flex;
+        justify-content: center;
+    }
+    .tiro, .esporte, .carro{
+        width: 250px;
+        padding: 15px;
+        border: 4px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        margin: 30px;
+        cursor: pointer;
+    }
+    .tiro:hover, .esporte:hover, .carro:hover{
+        transition: 0.3s;
+        filter: invert(0.5);
+    }
+
+
+    .capas{
+        display: flex;
+        justify-content: center;
+    }
+    .imgcapas{
+        width: 300px;
+        margin: 10px;
+        margin-left: 4%;
+        margin-right: 4%;
+        cursor: pointer;
+    }
+    .imgcapas:hover{
+        filter: opacity(0.8);
+    }
+    .esp{
+        background-color: transparent;
+        margin-top: -70px;
+        margin-bottom: -37px;
+    }
+    .conteudo2{
+        margin-right: 60%;
+        margin-left: 3%;
+    }
+    .homecont2{
+        padding-top: 25px;
+    }
+    .botoesconteudo2{
+        padding-bottom: 65px;
+    }
+</style>
+<!--StyleConteudo2-->
+
+<!--StyleFimPágina-->
+<style>
+    .plans{
+        display: flex;
+        justify-content: center;
+    }
+    .plansf7{
+        padding: 100px;
+        margin-bottom: 140px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 25px black;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        border-radius: 10px;
+    }
+    .basic{
+
+    }
+    .elem1{
+        display: flex;
+        justify-content: start;
+    }
+    .certo{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        top: 16px;
+        margin-left: 3px;
+    }
+    .container{
+        display: flex;
+    }
+    .basico{
+        background-color: white;
+        border-color: transparent;
+        border-radius: 30px;
+        padding: 20px 30px;
+        cursor: pointer;
+    }
+    .basico:hover{
+        transition: 0.3s;
+        background-color: gray;
+    }
+</style>
+<!--StyleFimPágina-->
+
+</head>
+<body>
+
+<!--BotãoVoltarTopo-->
+<b><a href="" class="voltartopo">^</a></b>
+<!--BotãoVoltarTopo-->
+
+<!--Navbar-->
+    <nav class="navbar1 fixed1">
+        <a href="landing.html" class="logo"><img src="img/SCORPION.png" alt=""></a>
+        <a class="login" href="login.html">Login</a>
+        <div class="navbar2">
+            <b><a href="landing.html" class="home">Home</a></b>
+            <b><a href="sobre.html" class="sobre">Sobre</a></b>
+            <form class="pesquisa1"><input type="search" placeholder="Pesquise">
+            <button type="submit" class="pesq"><img src="img/Lupa de Pesquisa.png" alt="" class="lupa"></button></form>
+            <b><a href="contato.html" class="contato">Contato</a></b>
+            <b><a href="promoções.html" class="promoções">Promoções</a></b>
+        </div>
+    </nav>
+<!--Navbar-->
+
+<br><br><br><br>
+
+<!--Conteudo-->
+    <div class="conteudo">
+        <h1>Home</h1>
+        <p>Isso só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site  
+            <span id="segundanavbar"></span>
+        </p>
+        <div>
+            <button class="avalie">Avalie</button>
+            <button class="explore">Explore</button>
+        </div>
+    </div>
+<!--Conteudo-->
+
+<br><br><br><br>
+
+<!--SegundaNavbar-->
+<div class="div1">
+    <nav class="navbar3">
+        <a href="" class="element1">Teste</a>
+        <a href="" class="element1">Teste</a>
+        <a href="" class="element1">Teste</a>
+        <div class="dropdown mv">
+            <button class="dropbtn bt">Dropdown<img src="img/Simbolo Dropdown.png" alt="" class="dropdw"></button>
+            <div class="dropdown-content">
+            <a href="#planos">Planos Mensais</a>
+            <a href="#em alta">Em Alta</a>
+            </div>
+          </div>
+    <a href="" class="conf"><img src="img/Configurações_Logo-removebg-preview.png" alt="" class="confimg"></a>
+</nav>
+<!--SegundaNavbar-->
+
+<hr>
+<h1 style="color: black;text-align: center;">Gêneros</h1>
+
+<!--Conteudo2-->
+
+<div class="quadrados">
+<img src="img/Tiro Simbolo.png" alt="" class="tiro">
+<img src="img/Esportes Simbolo.png" alt="" class="esporte">
+<img src="img/Carros Simbolo.png" alt="" class="carro">
+</div>
+<br><hr><br><br><br>
+</div>
+
+<div class="esp">
+    <div class="conteudo2">
+        <h1 class="homecont2">Jogos</h1>
+        <p>Isso só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site <br> Isso 
+            só foi escrito para encher o site de coisa para 
+            ter uma noção de como está ficando o site  
+            <span id="segundanavbar"></span>
+        </p>
+        <span id="em alta"></span>
+        <div class="botoesconteudo2">
+            <button class="avalie">Lista</button>
+            <button class="explore">Explore</button>
+        </div>
+    </div>
+</div>
+
+<div class="div1">
+    <br><hr>
+<h1 style="color: black;text-align: center;padding-top: 20px;">Em Alta</h1>
+
+<div class="capas">
+<img src="img/COD MW2 Capa.png" alt="" class="imgcapas">
+<img src="img/FC 25 Capa.png" alt="" class="imgcapas">
+<img src="img/NFS Heat Capa.png" alt="" class="imgcapas">
+</div>
+
+<br><br><hr><br>
+
+</div>
+<!--Conteudo2-->
+
+<!--FinalDaPágina-->
+<br><br><br><br><br><br><br>
+<span id="planos"></span>
+<h1 style="text-align: center;">Planos mensais</h1>
+
+<div class="container">
+
+    <fieldset class="plansf7">
+
+        <h1 class="basic">Basic</h1>
+        <form action="" class="elem1"><p>Jogos Pagos</p><img src="img/ErradoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Games Exclusivos</p><img src="img/ErradoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Beta testador</p><img src="img/ErradoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Jogos na pré-venda</p><img src="img/ErradoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Compartilhamento de Conta</p><img src="img/ErradoSimbolo.png" alt="" class="certo"></form>
+        <center><input type="button" value="Gratuito" class="basico"></center>
+    
+    </fieldset>
+
+    <fieldset class="plansf7">
+        <h1>Ultimate</h1>
+        <form action="" class="elem1"><p>Jogos Pagos</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Games Exclusivos</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Beta testador</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Jogos na pré-venda</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Compartilhamento de Conta - 10</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <center><input type="button" value="R$ 299,99" class="basico"></center>
+
+    </fieldset>
+
+    <fieldset class="plansf7">
+        <h1>Premium</h1>
+        <form action="" class="elem1"><p>Jogos Pagos</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Games Exclusivos</p><img src="img/ErradoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Beta testador</p><img src="img/ErradoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Jogos na pré-venda</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <form action="" class="elem1"><p>Compartilhamento de Conta - 5</p><img src="img/CertoSimbolo.png" alt="" class="certo"></form>
+        <center><input type="button" value="R$ 149,99" class="basico"></center>
+
+    </fieldset>
+
+</div>
+
+<!--FinalDaPágina-->
+
+</body>
+</html>

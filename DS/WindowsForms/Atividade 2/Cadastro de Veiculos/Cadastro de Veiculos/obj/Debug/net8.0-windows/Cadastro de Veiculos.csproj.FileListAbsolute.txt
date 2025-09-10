@@ -1,0 +1,16 @@
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\bin\Debug\net8.0-windows\Cadastro de Veiculos.exe
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\bin\Debug\net8.0-windows\Cadastro de Veiculos.deps.json
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\bin\Debug\net8.0-windows\Cadastro de Veiculos.runtimeconfig.json
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\bin\Debug\net8.0-windows\Cadastro de Veiculos.dll
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\bin\Debug\net8.0-windows\Cadastro de Veiculos.pdb
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro_de_Veiculos.Form1.resources
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.csproj.GenerateResource.cache
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.GeneratedMSBuildEditorConfig.editorconfig
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.AssemblyInfoInputs.cache
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.AssemblyInfo.cs
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.csproj.CoreCompileInputs.cache
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.dll
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\refint\Cadastro de Veiculos.dll
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.pdb
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\Cadastro de Veiculos.genruntimeconfig.cache
+D:\DS\Atividade 2\Cadastro de Veiculos\Cadastro de Veiculos\obj\Debug\net8.0-windows\ref\Cadastro de Veiculos.dll

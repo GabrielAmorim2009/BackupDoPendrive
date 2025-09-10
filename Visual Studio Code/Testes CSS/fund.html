@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão para mudar cor de fundo e botão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #btnMudarFundo {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            position: relative;
+            cursor: pointer;
+            background-color: rgb(179, 179, 179);
+            color: black;
+            border: none;
+            border-radius: 500px;
+            height: 65px;
+            width: 140px;
+            margin: 40px;
+            transition: 0.4s;
+            outline: 0;
+        }
+        #div{
+            position: absolute;
+            border-radius: 50%;
+            height: 55px;
+            width: 55px;
+            background-color: white;
+            transition: transform 0.4s ease;
+            background-size: cover;
+            margin: 0px 5px;
+            z-index: 2;
+            left: 0;
+        }
+        #img{
+            position: absolute;
+            right: 0;
+            margin: 0px 12px;
+            z-index: 0;
+            height: 45px;
+            width: 45px;
+        }
+        #img2{
+            position: absolute;
+            left: 0;
+            margin: 0px 12px;
+            z-index: 0;
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btnMudarFundo" onclick="mudarFundo()" title="Modo Escuro/Claro">
+        <div id="div"></div>
+        <img src="img/Sol.png" id="img">
+        <img src="img/Lua.png" id="img2">
+    </button>
+
+    <a href="testes.html">teste</a>
+
+    <script>
+        // Função para mudar fundo e salvar a preferência no localStorage
+        function mudarFundo() {
+            let btnMudarFundo = document.getElementById('btnMudarFundo');
+            let div = document.getElementById('div');
+
+            if (document.body.style.backgroundColor != "rgb(88, 88, 88)") {
+                // Mudar o fundo da página para cinza
+                document.body.style.backgroundColor = "rgb(88, 88, 88)";
+                // Mudar a cor de fundo do botão para azul
+                btnMudarFundo.style.backgroundColor = "rgb(43, 43, 43)";
+                // Mudar a posição da div (animada)
+                div.style.transform = "translateX(75px)"; // Movendo a div para a direita
+                // Salvar no localStorage
+                localStorage.setItem("fundo", "escuro");
+            }
+            else if (document.body.style.backgroundColor != "white") {
+                // Mudar o fundo da página para branco
+                document.body.style.backgroundColor = "white";
+                // Mudar a cor de fundo do botão para verde
+                btnMudarFundo.style.backgroundColor = "rgb(179, 179, 179)";
+                // Mudar a posição da div (animada)
+                div.style.transform = "translateX(0)"; // Movendo a div de volta para a esquerda
+                // Salvar no localStorage
+                localStorage.setItem("fundo", "claro");
+            }
+        }
+
+        // Carregar a configuração do fundo quando a página for carregada
+        window.onload = function() {
+            let fundo = localStorage.getItem("fundo");
+            
+            if (fundo === "escuro") {
+                document.body.style.backgroundColor = "rgb(88, 88, 88)";
+                btnMudarFundo.style.backgroundColor = "rgb(43, 43, 43)";
+                div.style.transform = "translateX(75px)"; // A div já estará na posição certa
+            } else {
+                document.body.style.backgroundColor = "white";
+                btnMudarFundo.style.backgroundColor = "rgb(179, 179, 179)";
+                div.style.transform = "translateX(0)"; // A div já estará na posição inicial
+            }
+        };
+    </script>
+
+</body>
+</html>

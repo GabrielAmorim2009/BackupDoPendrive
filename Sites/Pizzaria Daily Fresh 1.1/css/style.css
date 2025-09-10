@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    margin: 0;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-image: linear-gradient(to bottom, black, gray);
+}
+
+/*------------------Navbar------------------*/
+.main-navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 120px;
+}
+.div-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: auto;
+}
+.div-links a{
+    text-decoration: underline transparent;
+    font-size: 20px;
+    height: 20px;;
+    font-weight: bold;
+}
+.link-escolhido{
+    color: #eca539;
+}
+.link-escolhido:hover{
+    text-decoration: underline #eca539;
+    transition: 0.4s;
+}
+.link{
+    color: white;
+}
+.link:hover{
+    text-decoration: underline white;
+    transition: 0.4s;
+}
+.div-logo, .div-configurações{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+.logo{
+    width: 110px;
+    height: 110px;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.div-configurações img{
+    filter: invert(1);
+}
+.div-configurações:hover{
+    filter: invert(0.6);
+    transition: 0.5s;
+}
+.configurações{
+    width: 50px;
+    height: 50px;
+}
+/*------------------Navbar------------------*/
+
+/*------------------Conteudo----------------*/
+.container{
+    display: flex;
+
+    height: auto;
+}
+.div-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: auto;
+
+    width: 50%;
+    margin: 0px 15px 0px 30px;
+}
+.titulo{
+    font-family: "Bungee";
+    text-align: center;
+    color: #eca539;
+    font-size: 60px;
+    height: 60px;
+}
+.div-1 p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+.div-1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #eca539;
+    text-decoration: none;
+    color: black;
+    font-family: "Bungee";
+    font-size: 25px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px;
+}
+.div-1 a:hover{
+    background-color: #f0b660;
+    transition: 0.4s;
+}
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+.cardap-btn{
+    padding: 25px 0px;
+    width: 100%;
+}
+.dailyclub-btn, .pecaagora-btn{
+    padding: 25px 25px;
+}
+.div-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    width: 100%;
+    margin-top: 20px;
+}
+.div-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+
+    width: 50%;
+    margin: 0px 30px 0px 15px;
+}
+.div-2 img{
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+}
+/*------------------Conteudo----------------*/
+
+/*------------------Login----------------*/
+.div-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+    height: 60%;
+}
+textarea:focus, input:focus, select:focus {
+    outline: 0; 
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px;
+    border: solid 2px rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 650px;
+}
+.login-titulo{
+    text-align: center;
+
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 10px 0px 30px 0px;
+}
+input{
+    margin: 10px 0px;
+}
+input::placeholder{
+    color: white;
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 15px;
+}
+input[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 200px;
+    border: none;
+    background-image: linear-gradient(to right, 
+    #eca539, 
+    rgb(255, 102, 0), 
+    rgb(255, 0, 0));
+    box-shadow: 0px 0px 15px black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+input[type="submit"]:active{
+    box-shadow: 0px 0px 15px transparent;
+    transition: 0.4s;
+    transform: scale(0.95);
+}
+.div-esqsenha{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+.link-login{
+    text-decoration: underline transparent;
+    color: white;
+    font-weight: bold;
+}
+.link-login:hover{
+    transition: 0.5s;
+    text-decoration: underline white 2px;
+}
+.perf{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    margin-right: 10px;
+}
+.cadeado{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    margin-right: 10px; 
+}
+span{
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    border: solid 2px white;
+    border-radius: 200px;
+    margin-bottom: 20px;
+}
+span:focus-within{
+    box-shadow: 0px 0px 10px white;
+    transition: 0.4s;
+}
+input[type="text"], input[type="password"]{
+    flex: auto;
+    height: 30px;
+    margin: 0;
+    border-radius: 200px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.div-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+    height: 70%;
+}
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px;
+    border: solid 2px rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+/*------------------Login----------------*/

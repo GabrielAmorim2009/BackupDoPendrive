@@ -1,0 +1,175 @@
+@media (min-width: 900px) {
+.header-container{
+    height: 90px;
+}
+.header-logo{
+    height: 85px;
+    width: 85px;
+    margin-left: 25px;
+}
+.header-link{
+    font-size: 20px;
+}
+.header-link::before{
+    bottom: 30px;
+    height: 3px;
+}
+.header-conf{
+    height: 42px;
+    width: 42px;
+    margin-right: 25px;
+}
+
+.menu-lateral{
+    width: 70px;
+}
+.menu-lateral span{
+    height: 90px;
+}
+.menu-lateral-link{
+    height: 35px;
+    margin: 5px 0;
+}
+.menu-lateral hr{
+    width: 85%;
+    margin: 10px 0;
+}
+
+.container-cassino{
+    margin-top: 110px;
+    margin-left: 90px;
+    margin-right: 20px;
+}
+}
+
+@media (max-width: 500px) {
+.div-cassino{
+    height: 280px;
+    width: 280px;
+}
+.div-cassino h1 {
+    font-size: 18px;
+    padding: 8px 0;
+    width: 180px;
+}
+.div-result{
+    border: solid 20px #2e2d2d;
+    width: 70%;
+}
+#resultado-roleta{
+    border: solid 3.5px #e7a82b;
+    height: 80px;
+    font-size: 12px;
+}
+#resultado-roleta p{
+    font-size: 40px;
+}
+.div-cassino input {
+    padding: 6px 15px;
+    font-size: 18px;
+    width: 50%;
+    height: 30px;
+    margin-right: 7.5px;
+}
+.div-cassino input::placeholder{
+    font-size: 9px;
+}
+.div-cassino button {
+    padding: 6px 15px;
+    font-size: 10px;
+    width: 50%;
+    height: 50px;
+    margin-left: 7.5px;
+}
+.div-num{
+    width: 90%;
+    padding: 15px;
+}
+}
+
+@media (max-width: 460px) {
+.header-container{
+    box-shadow: 0 0 75px black;
+    height: 70px;
+}
+.header-logo{
+    height: 65px;
+    width: 65px;
+    margin-left: 15px;
+}
+.header-link{
+    font-size: 12px;
+}
+.header-link::before{
+    bottom: 26px;
+    height: 2px;
+}
+.header-conf{
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+.menu-lateral{
+    width: 40px;
+}
+.menu-lateral span{
+    height: 70px;
+}
+.menu-lateral-link{
+    height: 20px;
+    margin: 5px 0;
+}
+.menu-lateral hr{
+    width: 85%;
+    margin: 10px 0;
+}
+
+.container-cassino{
+    margin-top: 90px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+}
+
+@media (max-width: 385px) {
+.div-cassino{
+    height: 220px;
+    width: 220px;
+}
+.div-cassino h1 {
+    font-size: 13px;
+    padding: 6px 0;
+    width: 140px;
+}
+}
+
+@media (max-width: 350px) {
+.header-container{
+    box-shadow: 0 0 65px black;
+    height: 60px;
+}
+.header-logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.header-link{
+    font-size: 10px;
+}
+.header-link::before{
+    bottom: 22px;
+    height: 2px;
+}
+.header-conf{
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+}
+
+.container-cassino{
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+}

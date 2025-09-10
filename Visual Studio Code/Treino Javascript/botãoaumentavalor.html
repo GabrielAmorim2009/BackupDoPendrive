@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jersey+15&family=Tiny5&display=swap');
+
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-image: url(Paisagem\ Pixelada\ 2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: "Jersey 15", sans-serif;
+            font-size: 30px;
+        }
+        h2{
+            font-size: 120px;
+            margin: 0;
+            text-align: center;
+            filter: drop-shadow(black);
+        }
+        button{
+            flex: auto;
+            padding: 10px 0px;
+            border: solid black 2px;
+            background-image: url(Design\ sem\ nome.png);
+            background-size: contain;
+            cursor: pointer;
+            font-family: "Jersey 15";
+            font-size: 20px;
+            width: 100%;
+            max-height: 44px;
+        }
+        button:hover{
+            filter: brightness(0.7);
+        }
+        main{
+            display: flex;
+            align-items: center;
+            height: 60vh;
+            flex-direction: row;
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: auto;
+            flex-direction: column;
+            height: 400px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex: auto;
+            height: 400px;
+            margin: 0px 6%;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+        }
+        .godbutton{
+            flex: auto;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <main>
+        <div>
+            <button title="10 pontos necessários" onclick="upbutton()">Adicionar 2 pontos à contagem</button>
+            <button title="30 pontos necessários" onclick="upbutton2()">Adicionar 4 pontos à contagem</button>
+        </div>
+        <nav>
+            <h2 id="valor"></h2>
+            <button onclick="aumentarValor()">Clique para aumentar</button>
+        </nav>
+        <div>
+            <button title="90 pontos necessários" onclick="upbutton3()">Adicionar 8 pontos à contagem</button>
+            <button title="220 pontos necessários" onclick="upbutton4()">Adicionar 16 pontos à contagem</button>
+        </div>
+    </main>
+
+    <footer>
+        <button class="godbutton" title="1.000 pontos necessários" onclick="upbutton5()">Adicionar 777 pontos à contagem</button>
+        <button class="godbutton" title="20.000 pontos necessários" onclick="upbutton6()">Upar para o modo god</button>
+        <button class="godbutton" onclick="resetPontos()">RESETAR PONTOS!!!</button>
+    </footer>
+
+<script>
+    let valor = 0;
+    let statusBt = false;
+    let statusBt2 = false;
+    let statusBt3 = false;
+    let statusBt4 = false;
+    let statusBt5 = false;
+    let statusBt6 = false;
+
+    document.getElementById("valor").innerText = valor;
+
+    function aumentarValor() {
+
+        if(statusBt){
+            valor += 2;
+        }
+        else{
+            valor++;
+        }
+        if(statusBt2){
+            valor += 4;
+        }
+        else{
+            valor += 0;
+        }
+        if(statusBt3){
+            valor += 8;
+        }
+        else{
+            valor += 0;
+        }
+        if(statusBt4){
+            valor += 16;
+        }
+        else{
+            valor += 0;
+        }
+        if(statusBt5){
+            valor += 777;
+        }
+        else{
+            valor += 0;
+        }
+        if(statusBt6){
+            valor += 333333333;
+        }
+        else{
+            valor += 0;
+        }
+        
+        document.getElementById("valor").innerText = valor;
+    }
+
+    function upbutton() {
+        if (valor >= 10) {
+            statusBt = true;
+            alert("Pontos Adicionados");
+        }
+        else {
+            alert("Você não tem pontos suficientes!!!");
+        }
+    }
+
+    function upbutton2() {
+        if (valor >= 30) {
+            statusBt2 = true;
+            alert("Pontos Adicionados");
+        }
+        else {
+            alert("Você não tem pontos suficientes!!!");
+        }
+    }
+
+    function upbutton3() {
+        if (valor >= 90) {
+            statusBt3 = true;
+            alert("Pontos Adicionados");
+        }
+        else {
+            alert("Você não tem pontos suficientes!!!");
+        }
+    }
+
+    function upbutton4() {
+        if (valor >= 220) {
+            statusBt4 = true;
+            alert("Pontos Adicionados");
+        }
+        else {
+            alert("Você não tem pontos suficientes!!!");
+        }
+    }
+
+    function upbutton5() {
+        if (valor >= 1000) {
+            statusBt5 = true;
+            alert("Pontos Adicionados");
+        }
+        else {
+            alert("Você não tem pontos suficientes!!!");
+        }
+    }
+
+    function upbutton6() {
+        if (valor >= 20000) {
+            statusBt6 = true;
+            alert("MODO DE AUMENTO GOD ATIVADO!");
+        }
+        else {
+            alert("Você não tem pontos suficientes!!!");
+        }
+    }
+
+    function resetPontos() {
+        if (valor > 0) {
+            if (confirm("Certeza que quer voltar a EXTREMA POBREZA")) {
+                alert("Pontos resetados com sucesso");
+                statusBt = false;
+                statusBt2 = false;
+                statusBt3 = false;
+                statusBt4 = false;
+                statusBt5 = false;
+                statusBt6 = false;
+                valor = 0;
+            }
+            else {
+                alert("Pontos não foram resetados")
+            }
+        }
+        else {
+            alert("Você tem que ter pelo menos um ponto seu acefalo");
+        }
+
+        document.getElementById("valor").innerText = valor;
+    }
+</script>
+
+</body>
+</html>

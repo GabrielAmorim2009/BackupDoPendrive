@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    font-family: "Bungee";
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    height: 100%;
+    transition: .5s;
+}
+body{
+    background: linear-gradient(to bottom, #00ffff, black);
+    background-attachment: fixed;
+}
+
+/******* Header *******/
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    background: black;
+    box-shadow: 0 0 85px black;
+    height: 80px;
+    width: 100vw;
+    z-index: 2;
+}
+.header-logo{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    transition: .5s;
+    filter: grayscale(0);
+}
+.header-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    position: relative;
+
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: .5s;
+}
+.header-link::before{
+    content: "";
+    display: block;
+    position: absolute;
+
+    background: #00ffff;
+    bottom: 28px;
+    width: 0;
+    height: 3px;
+    transition: .3s ease-out;
+}
+.header-link:hover::before{
+    width: 100%;
+}
+.header-link:hover{
+    color: #00ffff;
+}
+.div-saldo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 60%;
+}
+.div-saldo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.div-saldo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #26c7c7;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .4s;
+}
+.div-saldo a:hover{
+    filter: brightness(80%);
+}
+.header-conf{
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    transition: .5s;
+    filter: grayscale(1);
+}
+.header-conf:hover{
+    filter: grayscale(0);
+}
+.link:active{
+    transition: .2s;
+    transform: scale(0.9);
+}
+
+/******* Header *******/
+
+/******* Geral *******/
+
+.container-geral{
+    display: flex;
+}
+.menu-lateral{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    
+    box-shadow: 0 0 25px black;
+    background: rgb(14, 14, 14);
+    height: 100vh;
+    width: 60px;
+}
+.menu-lateral span{
+    height: 90px;
+}
+.menu-lateral-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: auto;
+    margin: 5px 0;
+    transition: .4s;
+}
+.menu-lateral-link img{
+    filter: grayscale(1);
+    transition: .2s;
+}
+.menu-lateral-link img:hover{
+    filter: grayscale(0);
+    transform: rotate(10deg);
+}
+.menu-lateral hr{
+    background: rgb(138, 138, 138);
+    border: none;
+    height: 1px;
+    width: 85%;
+    margin: 10px 0;
+}
+
+/******* Geral *******/
+
+
+/******* Erro *******/
+
+.container-erro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    overflow: auto;
+    bottom: 0;
+    right: 0;
+    width: 93.7vw;
+    height: 87.2vh;
+    z-index: -1;
+}
+.erro{
+    height: auto;
+    font-size: 40px;
+}
+
+/******* Erro *******/
+
+
+/******* Home *******/
+
+.container-home{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: fixed;
+
+    bottom: 0;
+    right: 0;
+    width: 93.7vw;
+    height: 87.2vh;
+    z-index: -1;
+}
+.div-home{
+    display: flex;
+    justify-content: center;
+
+    background: rgb(36, 36, 36);
+    box-shadow: 0 0 17px black;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    height: 900px;
+}
+.div-jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: gray;
+    overflow-y: hidden;
+    height: 130px;
+    width: 97%;
+    margin: 10px;
+    padding: 0 2.5px;
+}
+.card-jogos{
+    background: white;
+    margin: 5px 2.5px;
+    height: 120px;
+    width: 200px;
+}
+
+/******* Home *******/
+
+
+/******* Cassino *******/
+
+.container-cassino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 84vh;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+.div-cassino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    color: white;
+    height: 320px;
+    width: 320px;
+}
+.div-cassino h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    background: #141414;
+    font-size: 24px;
+    padding: 10px 0;
+    width: 300px;
+    height: auto;
+}
+.div-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #2e2d2d;
+    border: solid 25px #2e2d2d;
+    height: auto;
+    width: 100%;
+}
+#resultado-roleta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: white;
+    border: solid 5px #e7a82b;
+    border-radius: 4px;
+    color: black;
+    height: 140px;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+#resultado-roleta p{
+    font-size: 50px;
+    height: auto;
+}
+.div-cassino input {
+    font-family: "Bungee";
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 50%;
+    height: 40px;
+    margin-right: 7.5px;
+    transition: .4s;
+}
+.div-cassino input:focus{
+    box-shadow: 0 0 15px rgb(85, 85, 85);
+}
+.div-cassino input::placeholder{
+    font-size: 14px;
+    font-family: "Bungee";
+}
+.div-cassino button {
+    font-family: "Bungee";
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 50%;
+    height: 60px;
+    background-color:#1ce424;
+    margin-left: 7.5px;
+    transition: .4s;
+}
+.div-cassino button:hover {
+    background-color:rgb(18, 151, 22);
+}
+.div-num{
+    display: flex;
+    align-items: center;
+
+    background: #141414;
+    width: 120%;
+    height: auto;
+    padding: 20px;
+}
+
+/******* Cassino *******/
+
+
+/******* Configurações *******/
+
+
+
+/******* Configurações *******/
+
+
+/******* Deposito *******/
+
+.body-deposito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seta-deposito{
+    position: fixed;
+
+    color: black;
+    height: auto;
+    width: auto;
+    top: 20px;
+    left: 20px;
+}
+.seta-deposito i{
+    font-size: 40px;
+}
+.seta-deposito i:active{
+    transform: translateX(-10px);
+}
+.main-deposito{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+    background: white;
+    box-shadow: 0 0 15px black;
+    border-radius: 10px;
+    padding: 35px;
+    height: 75vh;
+    width: 80vw;
+}
+.div-valor-deposito{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 70%;
+}
+.div-valor-deposito p{
+    font-size: 90px;
+    height: auto;
+}
+.div-ins-valor-deposito{
+    display: flex;
+    justify-content: center;
+
+    height: auto;
+}
+.div-ins-valor-deposito button{
+    width: auto;
+    background: gray;
+    border: none;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 7px;
+    transition: .4s;
+}
+.div-ins-valor-deposito button:hover{
+    cursor: pointer;
+    background: rgb(83, 83, 83);
+}
+.div-valor-deposito input{
+    border: none;
+    text-align: center;
+    color: rgb(56, 56, 56);
+    border-bottom: solid 3px gray;
+    height: 40px;
+    width: 320px;
+    font-size: 40px;
+}
+.div-valor-deposito input::placeholder{
+    text-align: center;
+    font-size: 30px;
+}
+.div-btn-deposito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 30%;
+}
+.btn-deposito:active{
+    transform: scale(0.9);
+}
+.btn-deposito{
+    cursor: pointer;
+    background: #2e2d2d;
+    color: white;
+    border: none;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 27%;
+    height: 80px;
+    font-size: 18px;
+}
+.btn-deposito:hover{
+    filter: brightness(75%);
+}
+
+/******* Deposito *******/

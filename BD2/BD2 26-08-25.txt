@@ -1,0 +1,105 @@
+SELECT * FROM cotacao ORDER BY `ValorKg` DESC;
+SELECT * FROM metal;
+SELECT * FROM empresa;
+SELECT * FROM extracao;
+
+--📌1 – JOIN com múltiplos filtros 
+--Liste todas as extrações feitas pela empresa "Vale do Rio Doce" que extraíram metais com ponto de fusão acima de 1000°C.
+SELECT
+    empresa.`Nome`,
+    metal.`Nome`,
+    metal.`TempFusao`,
+    extracao.`Data`
+FROM
+    extracao
+    INNER JOIN empresa ON empresa.`Id` = extracao.`FK_Empresa_Id`
+    INNER JOIN metal ON metal.`Simbolo` = extracao.`FK_Metal_Simbolo`
+WHERE
+    metal.`TempFusao` > 1000
+AND
+    empresa.`Id` = 2;
+
+--📌2 – Subquery com agregação 
+--Liste o nome e o símbolo do metal que teve o maior valor por Kg registrado em toda a tabela de cotações.
+SELECT
+    metal.`Nome`,
+    metal.`Simbolo`,
+    cotacao.`ValorKg`
+FROM
+    metal
+INNER JOIN
+    cotacao ON cotacao.`FK_Metal_Simbolo` = metal.`Simbolo`
+WHERE
+    cotacao.`ValorKg` = (SELECT MAX(cotacao.`ValorKg`) AS MaiorValorKG FROM cotacao);
+
+--📌3 – Atualização condicional 
+--Atualize o campo ValorDeMercado da empresa "Vale do Rio Doce" somando 10% ao valor atual, apenas se ela tiver extraído ouro no mês atual.
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`,
+    extracao.`Data`
+FROM
+    extracao
+INNER JOIN
+    empresa ON empresa.`Id` = extracao.`FK_Empresa_Id`
+WHERE
+    empresa.`Nome` = "Vale do Rio Doce"
+AND
+    extracao.`FK_Metal_Simbolo` = "AU"
+AND
+    MONTH(extracao.`Data`) = 8;
+
+UPDATE 
+    empresa
+INNER JOIN
+    extracao ON empresa.`Id` = extracao.`FK_Empresa_Id`
+SET 
+    empresa.`ValorDeMercado` = empresa.`ValorDeMercado` + (empresa.`ValorDeMercado` * 0.1) 
+WHERE
+    empresa.`Nome` = "Vale do Rio Doce"
+AND
+    extracao.`FK_Metal_Simbolo` = "AU"
+AND
+    MONTH(extracao.`Data`) = 8;
+
+--📌4 – Subquery correlacionada 
+--Liste os nomes das empresas que extraíram mais de 500 toneladas de qualquer metal em um único dia.
+
+
+--📌5 – Subquery simples 
+--Liste os nomes das empresas que extraíram ouro (AU) em qualquer data.
+SELECT
+    empresa.`Nome`,
+    extracao.`FK_Metal_Simbolo`
+FROM
+    empresa
+INNER JOIN
+    extracao ON extracao.`FK_Empresa_Id` = empresa.`Id`
+WHERE
+    extracao.`FK_Metal_Simbolo` = "AU"
+GROUP BY
+    empresa.`Nome`;
+--📌6 – Agregação com GROUP BY 
+--Liste o total de toneladas extraídas por cada empresa. 
+SELECT
+    empresa.`Nome`,
+    extracao.`QuantEmTonelada`
+FROM
+    empresa
+INNER JOIN
+    extracao ON extracao.`FK_Empresa_Id` = empresa.`Id`
+WHERE 
+    extracao.`QuantEmTonelada` = (SELECT SUM(extracao`QuantEmTonelada`) FROM extracao)
+GROUP BY
+    empresa.`Nome`;
+
+--📌7 – Subquery com filtro por empresa 
+--Liste os metais extraídos pela empresa "Barrick".
+SELECT
+    empresa.`Nome`,
+    metal.`Nome`
+FROM
+    empresa,
+    metal
+WHERE
+    empresa.`Nome` = "Barrick";

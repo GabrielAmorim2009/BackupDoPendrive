@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DS\\Exercicios Aula 2\\Combo Box\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11ACF95A-8BF4-456D-80C7-B53782A02A59}|Combo Box\\Combo Box.csproj|e:\\ds\\exercicios aula 2\\combo box\\combo box\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11ACF95A-8BF4-456D-80C7-B53782A02A59}|Combo Box\\Combo Box.csproj|solutionrelative:combo box\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11ACF95A-8BF4-456D-80C7-B53782A02A59}|Combo Box\\Combo Box.csproj|e:\\ds\\exercicios aula 2\\combo box\\combo box\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11ACF95A-8BF4-456D-80C7-B53782A02A59}|Combo Box\\Combo Box.csproj|solutionrelative:combo box\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\DS\\Exercicios Aula 2\\Combo Box\\Combo Box\\Form1.cs",
+              "RelativeDocumentMoniker": "Combo Box\\Form1.cs",
+              "ToolTip": "E:\\DS\\Exercicios Aula 2\\Combo Box\\Combo Box\\Form1.cs",
+              "RelativeToolTip": "Combo Box\\Form1.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwDsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:24:09.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "E:\\DS\\Exercicios Aula 2\\Combo Box\\Combo Box\\Form1.cs",
+              "RelativeDocumentMoniker": "Combo Box\\Form1.cs",
+              "ToolTip": "E:\\DS\\Exercicios Aula 2\\Combo Box\\Combo Box\\Form1.cs [Projeto]",
+              "RelativeToolTip": "Combo Box\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T19:37:05.285Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

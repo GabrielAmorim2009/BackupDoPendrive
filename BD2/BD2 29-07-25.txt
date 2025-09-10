@@ -1,0 +1,16 @@
+SET @simbolo_metal = (SELECT extracao.`FK_Metal_Simbolo` FROM extracao WHERE extracao.`FK_Metal_Simbolo` = "AU" LIMIT 1);
+
+SELECT @simbolo_metal;
+
+SELECT
+    empresa.`Nome`,
+    @simbolo_metal,
+    extracao.`Data`
+FROM
+    empresa,
+    extracao
+WHERE
+    empresa.`Nome` = 'Vale do Rio Doce'
+    AND extracao.`FK_Metal_Simbolo` = 'AU'
+    AND empresa.`ID` = extracao.`FK_Empresa_ID`
+    AND DAY(extracao.`Data`) > DAY(LAST_DAY(extracao.`Data`)) - 5;

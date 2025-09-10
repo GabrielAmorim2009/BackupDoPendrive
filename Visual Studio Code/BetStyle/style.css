@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(https://img.freepik.com/fotos-premium/grande-estadio-de-noite-vazia-com-luz-do-esporte-cena-noturna-ilustracao-3d-render_146508-637.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgb(228, 228, 228);
+    box-shadow: 0 0 10px black;
+    padding: 25px;
+    border-radius: 20px;
+    width: 500px;
+    margin-top: 30px;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 104%;
+    margin-bottom: 10px;
+}
+.div-time{
+    display: flex;
+    align-items: center;
+}
+.div-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 160px;
+}
+img{
+    height: 55px;
+    width: 55px;
+}
+.nome-time{
+    font-size: 14px;
+}
+hr{
+    border: none;
+    background: rgb(206, 206, 206);
+    width: 104%;
+    height: 2px;
+    margin: 5px 0;
+}
+.headerBet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    backdrop-filter: blur(100px);
+    padding: 10px 0;
+    box-shadow: 0 0 15px black;
+    width: 99.1vw;
+}
+.setaDeposito{
+    position: fixed;
+    left: 10px;
+    top: 30px;
+}
+.seta-voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    margin-left: 20px;
+}
+.seta-voltar:active{
+    transition: .2s;
+}
+.seta{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.saldoBet{
+    font-size: 40px;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+/****************** Resultado Final ******************/
+
+.container2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(112, 112, 112);
+}
+.div-info-resultfinal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.div-info-resultfinal h1{
+    font-size: 16px;
+    margin-left: 6px;
+}
+.div-info-resultfinal i{
+    font-size: 12px;
+    margin-right: 6px;
+    transform: rotate(0deg);
+    transition: .4s;
+}
+.div-btn-resultfinal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+.btn-resultfinal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    border-radius: 5px;
+    width: 33%;
+    height: 45px;
+    padding: 10px;
+}
+.btn-resultfinal:hover{
+    filter: brightness(90%);
+}
+.btn-resultfinal p{
+    font-size: 10px;
+}
+.btn-resultfinal h6{
+    font-size: 12px;
+}
+
+/****************** Resultado Final ******************/
+
+
+/****************** Ambas Marcam ******************/
+
+.container3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(112, 112, 112);
+}
+.div-info-ambas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.div-info-ambas h1{
+    font-size: 16px;
+    margin-left: 6px;
+}
+.div-info-ambas i{
+    font-size: 12px;
+    margin-right: 6px;
+    transform: rotate(0deg);
+    transition: .4s;
+}
+.div-btn-ambas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+.btn-ambas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    border-radius: 5px;
+    width: 49.5%;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+.btn-ambas:hover{
+    filter: brightness(90%);
+}
+.btn-ambas p{
+    font-size: 10px;
+}
+.btn-ambas h6{
+    font-size: 12px;
+}
+
+/****************** Ambas Marcam ******************/
+
+
+/****************** Gols ******************/
+
+.container4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(112, 112, 112);
+}
+.div-info-gols{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.div-info-gols h1{
+    font-size: 16px;
+    margin-left: 6px;
+}
+.div-info-gols i{
+    font-size: 12px;
+    margin-right: 6px;
+    transform: rotate(0deg);
+    transition: .4s;
+}
+.div-maisgols, .div-menosgols{
+    width: 49.5%;
+}
+.div-btn-gols{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+.btn-gols{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+.btn-gols:hover{
+    filter: brightness(90%);
+}
+.btn-gols p{
+    font-size: 10px;
+}
+.btn-gols h6{
+    font-size: 12px;
+}
+
+/****************** Gols ******************/
+
+
+
+.selected{
+    border: solid 2px rgb(0, 255, 213);
+    background: rgb(0, 255, 213);
+}
+.unselected{
+    border: solid 2px rgb(206, 206, 206);
+    background: rgb(255, 255, 255);
+}
+#odd{
+    color: white;
+}
+.ipt-valor{
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px black;
+    border: solid 2px black;
+    border-radius: 5px;
+    height: 50px;
+    width: 160px;
+}
+.ipt-valor:focus{
+    box-shadow: 0 0 15px rgb(0, 255, 213);
+    border-color: rgb(0, 255, 213);
+    transition: .6s;
+}
+.btn-apostar{
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+    width: 180px;
+}
+.btn-apostar:hover{
+    transition: .6s;
+    background: rgb(0, 255, 213);
+}
+.btn-apostar:active{
+    transition: .3s;
+    transform: scale(0.9);
+}
+
+
+
+/****************** Depósito ******************/
+
+.containerDeposito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containerDeposito *{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    margin: 2px 0;
+}
+.containerDeposito p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 30px;
+}
+.containerDeposito input{
+    width: 90%;
+}
+.containerDeposito button{
+    cursor: pointer;
+}
+
+
+/****************** Depósito ******************/

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .select{
+            display: block;
+            margin: 20px;
+            padding: 10px;
+        }
+        .option{
+            background-color: black;
+            color: white;
+        }
+        .option:hover{
+            background-color: white;
+            color: black;
+            transition: 0.2s;
+        }
+        div{
+            background-color: gray;
+            height: 300px;
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+        div:hover button{
+            display: block;
+            transform: translateY(-15px);
+            transition: transform 0.5s ease;
+        }
+        button{
+            transition: transform 0.5s ease;
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-right: 15px;
+            background-color: rgb(9, 255, 0);
+            border: none;
+            border-radius: 900px;
+            height: 70px;
+            width: 70px;
+            cursor: pointer;
+        }
+        button:hover{
+            transition: 0.4s;
+            background-color: rgb(8, 201, 2);
+        }
+        input{
+            accent-color: yellow;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+            filter: drop-shadow(0px 0px 2px #4444dd);
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="menu">
+        <main class="main-container">
+            <a href="testes.html" class="link">Testes_CSS</a>
+            <a href="displays.html" class="link">Displays</a>        
+            <a href="positions.html" class="link">Positions</a>
+            <a href="overflow.html" class="link">Overflow</a>
+        </main>
+        <main class="main-container">
+            <a href="input.html" class="link">Input_Dinamico</a>
+            <a href="keyframes.html" class="link">Keyframes</a>
+            <a href="flexwrap.html" class="link">Flex-Wrap</a>
+            <a href="borda RGB.html" class="link">RGB</a>
+        </main>
+    </header>
+
+    <img src="Sol.png" alt="">
+
+<input type="checkbox" name="" id="">
+
+<fieldset>
+    <legend>Teste</legend>
+</fieldset>
+
+<select class="select">
+    <option value="" class="option">Teste1</option>
+    <option value="" class="option">Teste2</option>
+    <option value="" class="option">Teste3</option>
+</select>
+
+<div>
+    <button></button>
+</div>
+
+<a href="fund.html">fundo</a>
+
+</body>
+</html>

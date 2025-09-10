@@ -1,0 +1,32 @@
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.exe
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.deps.json
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.runtimeconfig.json
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.dll
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.pdb
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo_Box.Form1.resources
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.csproj.GenerateResource.cache
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.GeneratedMSBuildEditorConfig.editorconfig
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.AssemblyInfoInputs.cache
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.AssemblyInfo.cs
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.csproj.CoreCompileInputs.cache
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.dll
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\refint\Combo Box.dll
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.pdb
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.genruntimeconfig.cache
+E:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\ref\Combo Box.dll
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo_Box.Form1.resources
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.csproj.GenerateResource.cache
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.GeneratedMSBuildEditorConfig.editorconfig
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.AssemblyInfoInputs.cache
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.AssemblyInfo.cs
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.csproj.CoreCompileInputs.cache
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.dll
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\refint\Combo Box.dll
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.pdb
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.exe
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.deps.json
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.runtimeconfig.json
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.dll
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\bin\Debug\net8.0-windows\Combo Box.pdb
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\Combo Box.genruntimeconfig.cache
+D:\DS\Exercicios Aula 2\Combo Box\Combo Box\obj\Debug\net8.0-windows\ref\Combo Box.dll

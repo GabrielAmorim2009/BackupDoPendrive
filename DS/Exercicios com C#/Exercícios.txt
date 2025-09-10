@@ -1,0 +1,34 @@
+Exercício 1 — Cadastro de Produtos com Preço Final
+Descrição:
+Crie um sistema orientado a objetos para cadastrar produtos de uma loja. Cada produto deverá ter os atributos: codigo, nome, precoBase e percentualLucro. O sistema deverá calcular o preço final de venda com base no preço base e no percentual de lucro. Exiba todos os produtos com seus respectivos dados e o preço final.
+
+Utilize classes, construtores, encapsulamento e métodos para cálculo e exibição dos dados.
+**********************************************************************************************************************
+
+Exercício 2 — Sistema de Alunos com Média Final
+Descrição:
+Implemente um sistema em C# para cadastrar alunos e calcular sua média. Cada aluno terá: matricula, nome, nota1, nota2. O sistema deve calcular a média aritmética simples e informar se o aluno está Aprovado (média >= 6) ou Reprovado.
+
+Use classes, métodos privados para cálculo da média, e métodos públicos para exibição.
+**********************************************************************************************************************
+
+Exercício 3 — Registro de Veículos
+Descrição:
+Construa um programa orientado a objeto para registrar veículos em uma locadora. Cada veículo terá: placa, modelo, ano, valorDiaria. O sistema deve permitir o cadastro e exibir uma lista com o valor estimado para 5 dias de locação para cada veículo.
+
+Crie método para calcular o valor da locação baseado no número de dias (use 5 dias como exemplo).
+**********************************************************************************************************************
+
+Exercício 4 — Sistema Bancário Simples
+Descrição:
+Crie um sistema simples de conta bancária. Cada cliente deve ter: numeroConta, nome, saldo. O sistema deve permitir depósitos e saques, e exibir o saldo atualizado. Implemente regras simples como não permitir saque maior que o saldo.
+
+Use métodos Depositar(double valor) e Sacar(double valor), e faça tratamento de erro simples.
+**********************************************************************************************************************
+
+Exercício 5 — Cadastro de Livros em uma Biblioteca
+Descrição:
+Crie um sistema para armazenar livros de uma biblioteca. Cada livro deve ter: isbn, titulo, autor, anoPublicacao. O sistema deverá cadastrar os livros e exibir todos os livros cadastrados em ordem de publicação (do mais antigo para o mais recente).
+
+Use List<Livro> e o método Sort com comparação baseada no ano.
+

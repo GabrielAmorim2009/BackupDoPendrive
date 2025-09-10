@@ -1,0 +1,34 @@
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.exe
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.deps.json
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.runtimeconfig.json
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.dll
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.pdb
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula_C_.Form1.resources
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.csproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.dll
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\refint\Aula C#.dll
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.pdb
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.genruntimeconfig.cache
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\ref\Aula C#.dll
+C:\Users\Aluno\Desktop\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula_C_.Properties.Resources.resources
+D:\Visual Studio 2022\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.exe
+D:\Visual Studio 2022\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.deps.json
+D:\Visual Studio 2022\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.runtimeconfig.json
+D:\Visual Studio 2022\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.dll
+D:\Visual Studio 2022\Aula C#\Aula C#\bin\Debug\net8.0-windows\Aula C#.pdb
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula_C_.Form1.resources
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula_C_.Properties.Resources.resources
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.csproj.GenerateResource.cache
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.AssemblyInfoInputs.cache
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.AssemblyInfo.cs
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.dll
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\refint\Aula C#.dll
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.pdb
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\Aula C#.genruntimeconfig.cache
+D:\Visual Studio 2022\Aula C#\Aula C#\obj\Debug\net8.0-windows\ref\Aula C#.dll

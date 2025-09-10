@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="javascript.js"></script>
+
+    <style>
+        body{
+            font-family: Arial;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+<a href="testes.html">Testes</a>
+
+<input type="text" id="meuInput">
+    
+<h1 id="soma"></h1>
+
+<h3 id="infos"></h3>
+
+<p id="textoExibido"></p>
+
+<h2 id="valor"></h2>
+
+<h3 id="aprv"></h3>
+
+<script>
+    document.getElementById('meuInput').addEventListener('input', function() {
+        var texto = document.getElementById('meuInput').value;
+        document.getElementById('textoExibido').innerText = texto;
+    });
+
+    let valor1;
+    let valor2;
+
+    do {
+        valor1 = parseFloat(prompt("Nota 1"));
+    } while (isNaN(valor1) || valor1 < 1 || valor1 > 10);
+    do {
+        valor2 = parseFloat(prompt("Nota 2"));
+    } while (isNaN(valor2) || valor2 < 1 || valor2 > 10);
+
+    let media = (valor1 + valor2) / 2;
+    document.getElementById("valor").innerText = media; 
+
+    let status = media >= 5 ? "Aprovado" : "Reprovado";
+//                  ^            ^              ^
+//     se isso for verdade   acontece isso   senão isso   
+    document.getElementById("aprv").innerText = status;
+
+    //let n1 = Number.parseFloat(prompt("Numero 1")); 
+    //let n2 = Number.parseFloat(prompt("Numero 2")); 
+    //let s = n1 + n2;
+    //alert('A soma dos valores é ' + s); // use o '+' para juntar uma variavel com o texto
+
+        //let nome = prompt("Nome");
+        //let idade = prompt("Idade");
+
+        //alert(`${nome} tem ${idade} anos`); //tem que usar crave ao inves de aspas
+    //document.getElementById('soma').innerText = s;
+
+        //document.write(`${nome} <br> tem ${idade} anos`);
+
+    //let valor = Number.parseInt(prompt("Numero"));
+    //document.getElementById("valor").innerText = valor;
+
+    //function aumentarValor() {
+        //valor++;
+        //document.getElementById("valor").innerText = valor;
+    //}
+
+    //Number.parseInt = converter para usar num inteiro
+    //Number.parseFloat = converter para usar num com virgula
+
+    // String(variavel) converter pra string
+    // (number + number) para adição
+    // (string + string) para concatenar
+
+    //variavel.Length = limitar o tamanho de string
+    //variavel.toUpperCase() = deixar a string maiuscula
+    //variavel.toLowerCase() = deixar a string minuscula
+
+    //variavel.toFixed(2) = limita quantas casas decimais vai ter o numero
+    //variavel.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    //                                             ^                    ^   
+    //                                  mostra em valor monetário     tipo moeda 
+    // 3 += 3 aumenta 3 no 3
+    // 3 -= 3 tira 3 do 3               no js usa -= para diminuir e += para aumentar
+</script>
+
+</body>
+</html>

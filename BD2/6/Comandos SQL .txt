@@ -1,0 +1,60 @@
+---
+
+## 📌 Tabela de Funções e Comandos SQL
+
+| **Comando / Função**               | **Descrição**                                                                                                                                 |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| `SELECT`                          | Usado para buscar dados em tabelas. Você pode escolher colunas específicas (`SELECT nome`) ou todas (`SELECT *`).                          |
+| `FROM`                            | Especifica a tabela de onde os dados serão extraídos.                                                                                        |
+| `WHERE`                           | Filtra os resultados com base em condições. Ex: `WHERE status = 3`.                                                                         |
+| `LIKE`                            | Usado para buscar valores que "parecem com" o que está sendo buscado. Pode usar `%` como coringa. Ex: `LIKE '%masculino%'`.                |
+| `>`                               | Operador de comparação: maior que. Ex: `valor > 100`.                                                                                        |
+| `=`                               | Operador de igualdade. Ex: `status = 3`.                                                                                                     |
+| `INNER JOIN`                      | Junta duas tabelas onde há correspondência entre as colunas especificadas. Ex: `usuario INNER JOIN endereco ON ...`                         |
+| `ON`                              | Define a condição de junção entre duas tabelas.                                                                                              |
+| `GROUP BY`                        | Agrupa os resultados por uma ou mais colunas. Ex: `GROUP BY usuario.id`.                                                                    |
+| `COUNT()`                         | Função agregadora que conta quantos registros existem. Ex: `COUNT(pedido.codigo)` conta os pedidos por cliente.                             |
+| `SUM()`                           | Soma valores de uma coluna. Ex: `SUM(quantidade * valor)` soma o total dos produtos por pedido.                                             |
+| `UPDATE`                          | Atualiza dados de uma ou mais colunas.                                                                                                       |
+| `SET`                             | Define os novos valores em um `UPDATE`.                                                                                                      |
+| `AND`                             | Combina duas condições que devem ser verdadeiras.                                                                                             |
+| `ORDER BY`                        | Ordena os resultados. Use `DESC` (decrescente) ou `ASC` (crescente). Ex: `ORDER BY valor DESC`.                                             |
+| `AS`                              | Dá um nome temporário para uma tabela ou coluna. Ex: `SUM(...) AS valor_t_pedido`.                                                          |
+| `IN`                              | (Não foi usado diretamente, mas é comum) Verifica se um valor está em uma lista de valores. Ex: `WHERE status IN (1, 2, 3)`.                 |
+| `*`                               | Seleciona todas as colunas da tabela.                                                                                                        |
+
+---
+
+## 🧠 Dicas rápidas com base nos comandos
+
+- **Consultas básicas** usam `SELECT`, `FROM`, `WHERE`.
+- **Relacionamento entre tabelas** é feito com `INNER JOIN`.
+- **Agrupamentos e totais** usam `GROUP BY`, `COUNT()` e `SUM()`.
+- **Atualizações em massa** usam `UPDATE` com subqueries (subconsultas).
+- **Filtragem de texto** usa `LIKE '%palavra%'` (coringa `%` antes e/ou depois).
+- **Ordenações** vêm no final com `ORDER BY coluna DESC/ASC`.
+
+---
+
+## 🧾 Exemplo de leitura de comandos
+
+```sql
+SELECT 
+	usuario.*, 
+	COUNT(pedido.codigo) as Quant_Pedido
+FROM 
+	pedido 
+	INNER JOIN 
+	usuario on usuario.id = pedido.fk_usuario 
+GROUP BY 
+	usuario.id;
+```
+
+- `usuario.*` → pega todas as colunas da tabela `usuario`
+- `COUNT(pedido.codigo)` → conta quantos pedidos cada usuário fez
+- `INNER JOIN` → liga a tabela `pedido` com `usuario`
+- `GROUP BY usuario.id` → agrupa os pedidos por usuário
+
+---
+
+Se quiser, posso transformar isso tudo em um PDF estilizado ou um resumão para imprimir. Quer que eu faça isso?

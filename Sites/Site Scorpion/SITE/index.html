@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaPrincipal</title>
+<script src="java.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="img/SCORPION.png" type="image/x-icon">
+
+<!--StyleNavbar-->
+    <style>
+        .navbar{
+            position: relative;
+        }
+        .elementNavbar1{
+            position: relative;
+            display: inline-block;
+            top: 10px;
+            max-width:80px;
+            max-height:80px;
+            width: auto;
+            height: auto;
+        }
+        .elementNavbar2{
+            text-decoration: none;
+            font-family: Arial, Times, serif;
+            position: relative;
+            display: inline-block;
+            left: 30px;
+            font-size: 12px;
+            bottom: 20px;
+        }
+        .elementNavbar3{
+            text-decoration: none;
+            font-family: Arial, Times, serif;
+            position: relative;
+            display: inline-block;
+            left: 60px;
+            font-size: 12px;
+            bottom: 20px;
+        }
+        .input1{
+            position: relative;
+            text-align: center;
+            float: right;
+            right: 60px;
+            top: 30px;      
+        }
+        input[type=search]{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 8px;
+            border-color: rgba(0, 0, 0, 0);
+        }
+        .button1{
+            position: relative;
+            border-radius: 8px;
+            border-color: rgba(0, 0, 0, 0);
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            right: 50px;
+            top: 3.5px;
+        }
+        .sticky1{
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            margin: -8px;
+        }
+        .imgtresBarras{
+            position: relative;
+            float: right;
+            height: 40px;
+            left: 245px;
+            top: 30px;
+        }
+        .lupapesquisa{
+            width: 20px;
+            filter: invert(0);
+        }
+        .pesq::placeholder{
+            left: 20px;
+        }
+    </style>
+<!--StyleNavbar-->
+    <style>
+        .linha{
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin: -8px;
+        }
+    </style>
+<!--StyleSubnavbar-->
+    <style>
+        .subnavbar{
+            padding-top: 1px;
+            margin: -8px;
+        }
+        .meusite{
+            position: relative;
+            font-family: Arial, Times, serif;
+            font-size: 40px;
+            text-align: center;
+            top: -22px;
+            color: white;
+        }
+        .imgPerf{
+            position: relative;
+            float: right;
+            bottom: 105px;
+            right: 40px;
+            height: 40px;
+        }
+        .imgConf{
+            position: relative;
+            float: right;
+            bottom: 105px;
+            right: 20px;
+            height: 40px;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            filter: invert(1);
+        }
+    </style>
+<!--StyleSubnavbar-->
+
+<!--StyleFinalPage-->
+    <style>
+    .finalpage{
+        margin: -8px;
+        margin-bottom: -8px;
+        padding-top: 10px;
+    }
+    .polpriv{
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Times, Serif;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        top: 20px;
+        margin-left: 20px;
+    }
+    .termus{
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Times, Serif;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .polcoo{
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Times, Serif;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        bottom: 20px;
+        margin-right: 20px;
+    }
+    .insta{
+        display: inline-block;
+        max-width:40px;
+        max-height:40px;
+        width: auto;
+        height: auto;
+        bottom: 47.5px;
+        left: 650px;
+    }
+    .whats{
+        display: inline-block;
+        max-width:40px;
+        max-height:40px;
+        width: auto;
+        height: auto;
+        bottom: 59.5px;
+        left: 650px;
+    }
+    .instaletras{
+        position: relative;
+        color: white;
+        font-size: 25px;
+        font-family: Arial;
+        display: inline-block;
+        text-decoration: none;
+        bottom: 10px;
+        padding-left: 10px;
+    }
+    .whatsletras{
+        position: relative;
+        color: white;
+        font-size: 25px;
+        font-family: Arial;
+        display: inline-block; 
+        bottom: 10px;
+        padding-left: 10px;
+    }
+    .allinsta{
+        position: relative;
+        top: 20px;
+        padding-left: 15px;
+    }
+    .allwhats{
+        position: relative;
+        top: 20px;
+        padding-left: 15px;
+    }
+    .linhafim{
+        position: relative;
+    }
+    </style>
+<!--StyleFinalPage-->
+
+</head>
+<body bgcolor="white">
+
+<!--BotãoVoltarTopo-->
+<span id='topo'></span>
+<b><a href='#topo' class="voltartopo">^</a></b>
+<!--BotãoVoltarTopo-->
+    
+<!--navbar-->
+<div class="sticky1">
+    <div class="navbar" style="background-color: black;">
+        <a href="index.html" class="elementNavbar1"><img src="img/SCORPION.png" alt=""></a>
+        <a href="index.html" class="elementNavbar2"><h1 style="color: white;">Home</h1></a>
+        <a href="sobre.html" class="elementNavbar3"><h1 style="color: white;">Sobre</h1></a>
+        <form class="input1" role="search">
+            <input class="pesq" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="button1" type="submit"><img src="img/Lupa de Pesquisa.png" alt="" class="lupapesquisa"></button>
+        </form>
+        <a href="" class="imgtresBarras"><img src="img/Três Barras.png" alt=""></a>
+    </div>
+</div>
+<!--navbar-->
+
+<div class="linha">
+    <hr>
+</div>
+
+<!--subnavbar-->
+<div class="subnavbar" style="background-color: rgb(0, 0, 0);">
+    <b><p class="meusite">Meu Site</p></b>
+    <a href="configurações.html" class="imgConf"><img src="img/Configurações_Logo-removebg-preview.png" alt=""></a>
+    <a href="login.html" class="imgPerf"><img src="img/Perfil_Logo.png" alt=""></a>
+</div>
+<!--subnavbar-->
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
+<!--FinalPage-->
+<div class="finalpage" style="background-color: black;">
+    
+    <hr class="linhafim">
+
+    <div class="allinsta">
+    <a href="" class="insta"><img src="img/Istagram-Logo Preta.png" alt=""></a>
+    <b><a href="" class="instaletras">@Scorpion.Site</a></b>
+    </div>
+
+    <div class="allwhats">
+    <a href="" class="whats"><img src="img/Whatsapp-Logo Preta.png" alt=""></a>
+    <b><p class="whatsletras">+55 15 9999-99999</p></b>
+    </div>    
+
+    <hr>
+    
+    <div>
+        <a href="" class="polpriv">Políticas de Privacidade</a>
+        <a href="" class="termus">Termos de Uso</a>
+        <a href="" class="polcoo">Política de Cookies</a>
+    </div>
+</div>
+<!--FinalPage-->
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio e Exibição de Imagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #imagePreview {
+            margin-top: 20px;
+            max-width: 100%;
+            max-height: 400px;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Envie uma Imagem</h1>
+    <!-- Formulário de envio de imagem -->
+    <input type="file" id="fileInput" accept="image/*">
+    <div>
+        <img id="imagePreview" src="" alt="Imagem Enviada" style="display:none;">
+    </div>
+</div>
+
+<script>
+    // Obter o elemento de input de arquivo e a imagem de pré-visualização
+    const fileInput = document.getElementById('fileInput');
+    const imagePreview = document.getElementById('imagePreview');
+
+    // Adicionar evento para quando um arquivo for selecionado
+    fileInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];  // Pega o arquivo selecionado
+
+        if (file) {
+            const reader = new FileReader();
+
+            // Quando o arquivo for carregado, mostra a imagem
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block'; // Torna a imagem visível
+            }
+
+            // Lê o arquivo como uma URL de dados (data URL)
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+</body>
+</html>

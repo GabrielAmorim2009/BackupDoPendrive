@@ -1,0 +1,7 @@
+D:\DS\Exercicios com C#\Ex4\Ex4\bin\Debug\Ex4.exe.config
+D:\DS\Exercicios com C#\Ex4\Ex4\bin\Debug\Ex4.exe
+D:\DS\Exercicios com C#\Ex4\Ex4\bin\Debug\Ex4.pdb
+D:\DS\Exercicios com C#\Ex4\Ex4\obj\Debug\Ex4.csproj.AssemblyReference.cache
+D:\DS\Exercicios com C#\Ex4\Ex4\obj\Debug\Ex4.csproj.CoreCompileInputs.cache
+D:\DS\Exercicios com C#\Ex4\Ex4\obj\Debug\Ex4.exe
+D:\DS\Exercicios com C#\Ex4\Ex4\obj\Debug\Ex4.pdb

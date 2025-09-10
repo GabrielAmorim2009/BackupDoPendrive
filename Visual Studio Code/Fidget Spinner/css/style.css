@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Bungee";
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 30px;
+}
+a:hover{
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.escolhido{
+    text-decoration: underline 2px;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 540px;
+}
+img{
+    width: 370px;
+    height: 370px;
+}
+img:hover{
+    transform: rotate(7200000deg);
+    transition: 300s;
+}

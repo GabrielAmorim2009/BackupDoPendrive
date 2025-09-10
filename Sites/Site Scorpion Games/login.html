@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="SCORPION.png" type="image/x-icon">
+
+<!--StylePerfil-->
+<style>
+    .navb{
+        display: flex;
+        justify-content: space-between;
+        margin: 11px;
+        margin-top: 0;
+    }
+    img{
+        width: 50px;
+        filter: invert(1);
+    }
+    img:hover{
+        transition: 0.3s;
+        filter: invert(0.7);
+    }
+    .perf{
+        position: relative;
+        right: 20px;
+        top: 20px;
+    }
+</style>
+<!--StylePerfil-->
+
+<!--StyleLogin-->
+    <style>
+        .cads{    
+            padding-left: 30%;
+            padding-right: 30%;   
+        }
+        .field7{
+            position: relative;
+            top: 40px;
+            padding-bottom: 100px;
+            border-radius: 8px;
+            border-color: black;
+            backdrop-filter: blur(10px);
+            border-style: solid;
+            width: 50%;
+            margin: 0px auto;
+            box-shadow: 0px 0px 15px black;
+        }
+        .logintitulo{
+            font-size: 40px;
+        }
+        input{
+            color: rgb(59, 59, 59);
+        }
+        input::placeholder{
+            color: rgb(59, 59, 59);
+        }
+        .input1{
+            padding: 10px 10px;
+            font-size: 25px;
+            border-style: solid;
+            border-width: 2.5px;
+            border-color: black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .input2{
+            padding: 10px 66.8px 10px 66.8px;
+            font-size: 25px;
+            border-style: solid;
+            border-width: 2.5px;
+            border-color: black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgba(0, 0, 0, 0);
+            position: relative;
+            top: 15px;
+            text-align: left;
+        }
+        .input3{
+            padding: 10px 10px;
+            font-size: 25px;
+            border-style: solid;
+            border-width: 2.5px;
+            border-color: black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgba(0, 0, 0, 0);
+            position: relative;
+            top: 30px;
+        }
+        .input4{
+            padding: 10px 10px;
+            font-size: 25px;
+            border-style: solid;
+            border-width: 2.5px;
+            border-color: black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgba(0, 0, 0, 0);
+            position: relative;
+            top: 45px;
+        }
+        textarea:focus, input:focus, select:focus {
+            outline: 0; 
+        }
+        input[type=text]{
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            cursor: pointer;
+            filter: invert(0.2);
+        }
+        input[type=date]{
+            padding-left: 10px;
+            padding-right: 124px;
+        }
+        input[type=button]{
+            cursor: pointer;
+            position: relative;
+            top: 95px;
+            padding: 20px 50px 20px 50px;
+            border-radius: 30px;
+            border: none;
+            background-image: linear-gradient(to right, black, rgb(24, 24, 24), rgb(29, 29, 29));
+            color: white;
+            font-family: arial;
+        }
+        input[type=button]:hover{
+            transition: all 0.4s;
+            background-image: linear-gradient(to right, white, rgb(184, 181, 181), rgb(146, 144, 144));
+            color: black;
+            border: none;
+        }
+        a{
+            color: black;
+            font-size: 20px;
+        }
+        a:hover{
+            color: white;
+        }
+        .homei{
+            position: relative;
+            margin-left: 10px;
+            padding-left: 0;
+            top: 20px;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px;
+        }
+        .homei:hover{
+            transition: all 0.3s;
+            color: rgb(168, 168, 168);
+            border-color: rgb(168, 168, 168);
+        }
+        .cadastrar{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+<!--StyleLogin-->
+
+</head>
+<body>
+
+    <div class="navb">
+        <a href="landing.html" class="homei">Home</a>
+        <a href="perfil.html" class="perf"><img src="img/Perfil_Logo.png" alt=""></a>
+    </div>
+
+<!--login-->
+<div class="cads">
+    <fieldset class="field7">
+        <h1 style="text-align: center;font-family: arial;" class="logintitulo">Login</h1>
+        <center><input type="text" class="input1" placeholder="Nome"></center>
+        <center><input type="date" class="input2"></center>
+        <center><input type="text" class="input3" placeholder="email@dominio.com"></center>
+        <center><input type="password" class="input4" placeholder="Senha"></center>
+        <center><input type="button" class="" value="Login"></center>
+        <a href="cadastro.html" class="cadastrar">Cadastrar</a>
+    </fieldset>
+</div>
+<!--login-->
+
+</body>
+</html>

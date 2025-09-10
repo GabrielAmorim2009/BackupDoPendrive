@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio 2022\\Aula C#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|d:\\visual studio 2022\\aula c#\\aula c#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|solutionrelative:aula c#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|d:\\visual studio 2022\\aula c#\\aula c#\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|solutionrelative:aula c#\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|d:\\visual studio 2022\\aula c#\\aula c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|solutionrelative:aula c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|d:\\visual studio 2022\\aula c#\\aula c#\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|solutionrelative:aula c#\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|d:\\visual studio 2022\\aula c#\\aula c#\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|solutionrelative:aula c#\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|d:\\visual studio 2022\\aula c#\\aula c#\\aula c#.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{879BC490-AAB1-4F17-B505-A5F96C8F91FE}|Aula C#\\Aula C#.csproj|solutionrelative:aula c#\\aula c#.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Aula C#.csproj",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Aula C#.csproj",
+              "RelativeDocumentMoniker": "Aula C#\\Aula C#.csproj",
+              "ToolTip": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Aula C#.csproj",
+              "RelativeToolTip": "Aula C#\\Aula C#.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T10:59:41.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Program.cs",
+              "RelativeDocumentMoniker": "Aula C#\\Program.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Program.cs",
+              "RelativeToolTip": "Aula C#\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T10:59:12.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Aula C#\\Form1.Designer.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Form1.Designer.cs",
+              "RelativeToolTip": "Aula C#\\Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T10:56:15.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Data.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Data.cs",
+              "RelativeDocumentMoniker": "Aula C#\\Data.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Data.cs",
+              "RelativeToolTip": "Aula C#\\Data.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T12:16:15.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Funcionario.cs",
+              "RelativeDocumentMoniker": "Aula C#\\Funcionario.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Funcionario.cs",
+              "RelativeToolTip": "Aula C#\\Funcionario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T10:39:48.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Form1.cs",
+              "RelativeDocumentMoniker": "Aula C#\\Form1.cs",
+              "ToolTip": "D:\\Visual Studio 2022\\Aula C#\\Aula C#\\Form1.cs [Design]",
+              "RelativeToolTip": "Aula C#\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T10:11:01.824Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

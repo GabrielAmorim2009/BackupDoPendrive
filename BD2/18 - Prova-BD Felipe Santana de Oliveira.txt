@@ -1,0 +1,272 @@
+-- Prova individual 
+--      – não é permitido qualquer tipo de consulta ou colaboração entre colegas.
+-- Identificação do arquivo – o arquivo de respostas deve ser nomeado seguindo o modelo:
+--      prova-bd2 [seu nome completo].txt
+--          Exemplo: prova-bd2 eliton camargo de oliveira.txt
+-- Formato das respostas 
+--      – cada questão deve ser respondida com o respectivo comando/solução solicitado no enunciado, imediatamente abaixo do enunciado.
+-- Entrega da prova 
+--      – os arquivos serão recolhidos via pendrive no momento indicado pelo professor.
+
+
+-- 1) Selecione todos os dados (Id, Nome, ValorDeMercado) de todas as empresas existentes na tabela empresa;
+Resposta: 
+SELECT 
+    *
+FROM
+    empresa;
+
+-- 2) Selecione todos os dados (Simbolo, Nome, Densidade, PesoAtomico, TempFunsao) de todos os metais existentes na tabela metal;
+Resposta: 
+SELECT 
+    *
+FROM
+    metal;
+
+-- 3) Selecione todos os dados (Id, FK_Empresa_Id, FK_Metal_Simbolo, Data, Quantidade) de todas as extrações existentes na tabela extracao;
+Resposta:
+SELECT 
+    *
+FROM
+    extracao;
+
+-- 4) Selecione apenas o campo Nome da tabela empresa para as empresas que possuem o valor de mercado maior que 5000;
+Resposta:
+SELECT 
+    empresa.`Nome`
+FROM
+    empresa
+WHERE 
+    empresa.`ValorDeMercado` > 5000;
+
+-- 5) Selecione (Nome, Densidade, TempFusao) da tabela metal para os metais que possuem um peso atômico entre 50 e 100;
+Resposta:
+SELECT 
+    metal.`Nome`,
+    metal.`Densidade`,
+    metal.`TempFusao`
+FROM
+    metal
+WHERE
+`PesoAtomico` BETWEEN 50 AND 100;
+
+-- 6) Selecione (Nome, ValorDeMercado) da tabela empresa para as empresas que possuem o nome começando com a letra "A";
+Resposta:
+SELECT 
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.`Nome` LIKE "A%";
+
+-- 7) Selecione todos os dados da tabela metal para os metais que possuem uma densidade maior que 10 e um peso atômico menor que 100;
+Resposta:
+SELECT
+    *
+FROM
+    metal
+WHERE 
+    metal.`Densidade` > 10 AND metal.`PesoAtomico` < 100;
+
+-- 8) Selecione (Nome, ValorDeMercado) da tabela empresa para as empresas que possuem o nome começando com a letra "v" e terminando com a letra "e";
+Resposta:
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.`Nome` LIKE "v%e";
+
+
+-- 9) Selecione todos os dados (Simbolo, Nome, Densidade, PesoAtomico, TempFunsao) da tabela metal para os metais que possuam como parte do nome a palavra "pra";
+Resposta:
+SELECT
+    *
+FROM
+    metal
+WHERE
+    metal.`Nome` LIKE "%pra%";
+
+-- 10) Selecione (FK_Empresa_Id, FK_Metal_Simbolo, Data, QuantEmTonelada) da tabela extracao para as extrações que ocorreram no mês de janeiro de 2020 cuja quantidade é maior que 99 e o fk_Empresa_Id é igual a 1;
+Resposta:
+SELECT
+    extracao.`FK_Empresa_Id`,
+    extracao.`FK_Metal_Simbolo`,
+    extracao.`Data`,
+    extracao.`QuantEmTonelada`
+FROM
+    extracao
+WHERE
+    MONTH(`Data`) = 01 AND YEAR(`Data`) = 2020 AND extracao.`QuantEmTonelada` > 99 AND `FK_Empresa_Id` = 1;
+
+-- 11) Selecione o Nome e o PesoAtomico do metal que possui o maior peso atômico;
+Resposta:
+SELECT
+    metal.`Nome`,
+    metal.`PesoAtomico`
+FROM
+    metal
+WHERE
+    `PesoAtomico` = (SELECT MAX(metal.`PesoAtomico`) FROM metal);
+
+-- 12) Selecione o Nome e o ValorDeMercado da empresa que possui o menor valor de mercado;
+Resposta:
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    `ValorDeMercado` = (SELECT MIN(empresa.`ValorDeMercado`) FROM empresa);
+
+-- 13) Selecione o Nome e o ValorDeMercado da empresa que possui o maior valor de mercado;
+Resposta:
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    `ValorDeMercado` = (SELECT MAX(empresa.`ValorDeMercado`) FROM empresa);
+
+-- 14) Crie um comando que mostre a diferença entre o maior e o menor valor de mercado das empresas;
+Resposta:
+
+
+-- 15) Selecione o Nome e o ValorDeMercado da empresa que possui o nome começando com a letra "n" e terminando com a letra "t";
+Resposta:
+SELECT
+    empresa.`Nome`,
+    empresa.`ValorDeMercado`
+FROM
+    empresa
+WHERE
+    empresa.Nome LIKE "n%t";
+
+
+-- 16) Selecione (Nome do metal, Data da cotação e valor da cotação) para o Maior valor histórico do metal cujo nome é "Prata", considerando que o valor do metal está na tabela cotacao.
+-- Dica: Utilize o comando JOIN para unir as tabelas metal e cotacao.
+-- Dica 2: Utilize uma subconsulta para encontrar o maior valor histórico do metal "Prata".
+-- Dica 3: Construa a subconsulta primeiro, para obter o maior valor da contação deste metal e depois construa a consulta principal.
+Resposta:
+SELECT
+    metal.`Nome`,
+    cotacao.`Data`,
+    cotacao.`ValorKg`
+FROM
+    cotacao
+    INNER JOIN
+    metal ON metal.`Simbolo` = cotacao.`FK_Metal_Simbolo`
+WHERE    
+    metal.`Nome`= "Prata" AND `ValorKg`= (SELECT MAX(cotacao.`ValorKg`) FROM cotacao  
+    INNER JOIN
+    metal ON metal.`Simbolo` = cotacao.`FK_Metal_Simbolo`
+WHERE
+    metal.`Nome`= "Prata");
+
+
+
+-- 17) Selecione (Nome do metal, Data da cotação e valor da cotação) para o Menor valor histórico do metal cujo nome é "Cobre", considerando que o valor do metal está na tabela cotacao.
+-- Dica: Utilize o comando JOIN para unir as tabelas metal e cotacao.
+-- Dica 2: Utilize uma subconsulta para encontrar o menor valor histórico do metal "Cobre".
+-- Dica 3: Construa a subconsulta primeiro, para obter o menor valor da contação deste metal e depois construa a consulta principal.
+-- Subconsulta para encontrar o menor valor histórico do metal "Cobre"
+Resposta:
+SELECT
+    metal.`Nome`,
+    cotacao.`Data`,
+    cotacao.`ValorKg`
+FROM
+    cotacao
+    INNER JOIN
+    metal ON metal.`Simbolo` = cotacao.`FK_Metal_Simbolo`
+WHERE    
+    metal.`Nome`= "Cobre" AND `ValorKg`= (SELECT MIN(cotacao.`ValorKg`) FROM cotacao  
+    INNER JOIN
+    metal ON metal.`Simbolo` = cotacao.`FK_Metal_Simbolo`
+WHERE
+    metal.`Nome`= "Cobre");
+
+-- 18) Na tabela cotacao, altere todos os registros da cotação do metal cobre (Cu) cujo valor seja igual a 0, para o valor 0.1.
+-- Dica 1: Antes de executar o comando de alteração, faça uma consulta (SELECT) para verificar quais registros serão alterados.
+-- Dica 2: Utilize o comando UPDATE.
+-- Dica 3: Utilize o comando WHERE para filtrar os registros do metal cobre (Cu) e cujo valor seja menor que 1.
+-- Dica 4: Utilize o comando SET para alterar o valor da cotação para 1.
+
+
+-- 19) Na tabela empresa, altere o valor de mercado da empresa "Anglo American" para 7500.
+-- Dica 1: Antes de executar o comando de alteração, faça uma consulta (SELECT) para verificar o registro que será alterado.
+-- Dica 2: Utilize o comando UPDATE.
+-- Dica 3: Utilize o comando WHERE para filtrar o registro da empresa "Anglo American".
+-- Dica 4: Utilize o comando SET para alterar o valor de mercado para 7500.
+Resposta:
+UPDATE empresa SET `ValorDeMercado` = 7500 WHERE empresa.`Nome` = "Anglo American";
+
+-- 20) Qual é o valor médio da cotação do metal "Tungstênio"?
+
+--  21) Qual é o total em extração e a média diária que a empresa "PotashCorp" extrai em relação ao "ferro"?
+
+-- 22) Liste os dados da tabela metal, ordenados pelo peso atômico em ordem decrescente.
+Resposta: 
+SELECT 
+    *
+FROM
+    metal
+ORDER BY
+    metal.`PesoAtomico` DESC;
+
+-- 23) Liste os dados da tabela empresa, ordenados pelo valor de mercado em ordem crescente.
+Resposta:
+SELECT 
+    *
+FROM
+    metal
+ORDER BY
+    metal.`PesoAtomico` ASC;
+
+-- 24) Liste os dados da tabela extracao, ordenados pela data em ordem decrescente.
+Resposta: 
+SELECT 
+    *
+FROM
+    extracao
+ORDER BY
+    `QuantEmTonelada` DESC;
+
+-- 25) Liste os 10 maiores valores históricos da contação do metal "Ouro".
+
+-- 26) Liste os 30 maiores valores de contação do metal "Ouro", posteriormente ordenando-os pelo valor em ordem crescente.
+
+-- 27) Liste o valor de cotação médio de cada metal, ordenado pelo nome do metal em ordem alfabética.
+
+-- 28) Liste a quantidade total de extrações por empresa, ordenada pelo nome da empresa em ordem alfabética.
+
+-- 29) Liste (Nome da empresa, Nome do metal, Quantidade total extraída), ordenada pelo nome da empresa em ordem alfabética e posteriormente pela quantidade total de extração em ordem decrescente.
+
+-- 30) Levando em conta cada extração realizada por cada empresa e o valor de cotação do metal na data da extração, liste (Nome da empresa, Nome do metal, Data da extração, Quantidade extraída, Valor da cotação na data da extração, Valor total da extração (Quantidade extraída * Valor da cotação na data da extração)), ordenada pelo nome da empresa em ordem alfabética e posteriormente pela data da extração em ordem decrescente.
+
+-- 31) Para cada empresa e para cada dia de extração, calcule o valor bruto obtido.
+-- O valor bruto deve considerar a quantidade extraída de cada metal multiplicada pelo valor de cotação correspondente na mesma data.
+-- O resultado deve exibir: (Nome da empresa, Data da extração, ValorBruto do dia).
+
+-- 32) Históricamente, quanto cada empresa lucrou com as suas extrações?
+-- O lucro deve considerar a quantidade extraída de cada metal multiplicada pelo valor de cotação correspondente na mesma data.
+-- O resultado deve exibir: (Nome da empresa, LucroTotal).
+
+-- 33) Se houver, delete todos os registros de extração realizados em finais de semana (sábado e domingo).
+-- Dica 1: Antes de executar o comando de deleção, faça uma consulta (SELECT) para verificar quais registros serão deletados.
+-- Dica 2: Utilize o comando DELETE.
+-- Dica 3: Utilize o comando WHERE para filtrar os registros realizados em finais de semana.
+-- Dica 4: Utilize a função DAYOFWEEK() para identificar os dias da semana (1 = Domingo, 7 = Sábado).
+
+-- 34) Se houver, delete todos os registros de cotação cujo valor seja igual a 0 ou null.;
+-- Dica 1: Antes de executar o comando de deleção, faça uma consulta (SELECT) para verificar quais registros serão deletados.
+-- Dica 2: Utilize o comando DELETE.    
+-- Dica 3: Utilize o comando WHERE para filtrar os registros cujo valor seja igual a 0 ou null.;
+
+-- 35) Se houver, delete todas as empresas que não possuem registros de extração.
+-- Dica 1: Antes de executar o comando de deleção, faça uma consulta (SELECT) para verificar quais registros serão deletados.
+-- Dica 2: Utilize o comando DELETE.    
+-- Dica 3: Utilize o comando WHERE para filtrar as empresas que não possuem registros de extração.

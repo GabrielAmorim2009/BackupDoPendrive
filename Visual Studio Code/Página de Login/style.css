@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+body{
+    display: grid;
+    place-items: center;
+
+    height: 98vh;
+    background-image: url("/img/Wallpaper\ WC.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.titulo-login{
+    font-size: 35px;
+    margin-bottom: -30px;
+    margin-top: -20px;
+}
+.form-login{
+    display: grid;
+    place-items: center;
+
+    background: transparent;
+    border: solid 1px rgb(197, 196, 196);
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 45px black;
+}
+.div-dados{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+}
+.lbl-nome, .lbl-senha{
+    position: absolute;
+
+    pointer-events: none;
+    left: 6px;
+    padding: 0 4px;
+    font-size: 16px;
+    transform: translateY(0px);
+    transition: .4s;
+}
+.img-dados{
+    position: absolute;
+
+    pointer-events: none;
+    filter: invert(1);
+    height: 25px;
+    width: 25px;
+    right: 6px;
+}
+#olho{
+    pointer-events: visible;
+    cursor: pointer;
+}
+.input-txt, .input-pwd{
+    padding: 15px 10px;
+    font-size: 18px;
+    transition: .4s;
+    border: none;
+    border-bottom: solid 2px white;
+    background: transparent;
+}
+.input-txt:focus + .lbl-nome, .input-pwd:focus + .lbl-senha{
+    transform: translateY(-30px);
+    color: rgb(0, 255, 149);
+}
+.input-txt:focus, .input-pwd:focus{
+    border-color: rgb(0, 255, 149);
+}
+.input-txt:valid + .lbl-nome, .input-pwd:valid + .lbl-senha{
+    transform: translateY(-30px);
+    color: rgb(0, 255, 149);
+}
+.input-txt:valid , .input-pwd:valid{
+    border-color: rgb(0, 255, 149);
+}
+.div-esqsenha-cads{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+.div-esqsenha-cads a{
+    text-decoration: underline transparent;
+    transition: .4s;
+}
+.div-esqsenha-cads a:hover{
+    color: rgb(0, 255, 149);
+    text-decoration: underline 2px rgb(0, 255, 149);
+}
+.btn-submit{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 50rem;
+    transition: .4s;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 15px black;
+}
+.btn-submit:hover{
+    background: rgb(0, 255, 149);
+    box-shadow: 0 0 15px rgb(0, 255, 149);
+}
+.btn-submit:active{
+    transform: scale(0.9);
+}

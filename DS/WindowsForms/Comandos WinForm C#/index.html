@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowsForm C#</title>
+    <link rel="shortcut icon" href="Csharp Logo.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: arial;
+            background-image: linear-gradient(to bottom, black 60%, rgb(22, 0, 22));
+            background-attachment: fixed;
+            color: whitesmoke;
+        }
+        p{
+           font-size: 25px; 
+        }
+        span{
+            color: rgb(156, 1, 156);
+            font-weight: bold;
+        }
+        div{
+            box-shadow: 0 0 10px rgb(34, 34, 34);
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 30px 0px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Comandos</h1>
+        <p> <span> Application.Exit() </span> - Fechar a aplicação <br>
+            <span> labelHW.Text = "Cassino" </span> - Ele vai substituir oque está escrito na label será substituido por "Cassino" <br>
+            <span> labelHW.Text = DateTime.Now.String("HH:mm:ss") </span> - Pega a hora de agora<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Tipos de conteudo</h1>
+        <p> <span> MessageBox("conteudo", "caption", "botões", "icones") </span> - Exibe uma caixa de mensagem que pode conter texto, botões e símbolos que possam informar e instruir o usuário.  
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do MessageBox</h1>
+        <p> <span> MessageBox.Show("exemplo") </span> – mostrar o MessageBox na tela<br>
+            <span> MessageBox.Show("exemplo", "Alerta") </span> – o "alerta" é o que ira aparecer no topo do messagebox,<br>
+            <span> MessageBox.Show("exemplo", MessageBoxButtons.OK) </span> – o messagebox terá um botão de OK, mas poderá usar outros tipos como: yes, no, cancel, abort, retry e ignore<br>
+            <span> MessageBox.Show("exemplo", MessageBoxIcon.Exclamation) </span> – o messagebox terá um icone de exclamação, mas poderá usar outros tipos como: Question, Stop, Error, Warning e Information
+            <br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do TextBox</h1>
+        <p> <span> AcceptsReturn </span> – Usado com várias linhas. Diz se a tecla de retorno está incluída na entrada. O retorno será convertido em uma seqüência de escape \n<br>
+            <span> Enabled </span> – Selecionado como false para deixar a caixa de texto somente como leitura<br>
+            <span> Font </span> – As propriedades de fonte que serão usadas pela caixa de texto<br>
+            <span> Lines </span> – As linhas de texto em uma caixa de texto de várias linhas<br>
+            <span> Multiline </span> – Defina como true para permitir várias linhas em uma caixa de texto<br>
+            <span> Text </span> – Texto dentro da caixa de texto<br>
+            <span> PasswordChar  </span> – Aceita um caractere que será usado para mascarar cada caractere digitado pelo usuário<br>
+            <span> ReadOnly </span> – Determina se o texto pode ser editado<br>
+            <span> Visible </span> – Determina se a caixa de texto é visível dentro do formulário<br>
+            <span> WordWrap </span> – Usado com várias linhas. Defina como true para permitir a quebra automática de palavras<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do Button</h1>
+        <p> <span> WindowState </span> – deixar o forms em tela cheia<br>
+            <span> AutoEllipsis </span> – Especifica se é necessário acrescentar pontos (...) quando o texto é muito longo e não pode cabe dentro do botão.<br>
+            <span> AutoSize </span> – Especifica se o botão irá redimensionar automaticamente para caber seu conteúdo.<br>
+            <span> FlatStyle </span> – Obtém ou define aparência plana ao controle botão.<br>
+            <span> Enabled </span> – Se definido como false, o botão não pode ser clicado ou receber foco.<br>
+            <span> Image </span> – Uma imagem opcional que você pode colocar dentro do componente.<br>
+            <span> ImageAlign </span> – O alinhamento da imagem no botão.<br>
+            <span> Text </span> – O texto dentro do botão.<br>
+            <span> Visible </span> – Diz se o botão está visível ou não.<br>
+            <span> Click </span> – Ocorre quando você clica no botão.<br>
+            <span> Leave </span> – Ocorre quando o ponteiro do mouse sai do controle.<br>
+            <span> LocationChanged </span> – Ocorre quando a localização do botão é alterado.<br>
+            <span> MouseDown </span> – Ocorre quando o ponteiro do mouse está sobre o controle e um botão do mouse é pressionado.<br>
+            <span> MouseEnter </span> – Ocorre quando o ponteiro do mouse entra no controle.<br>
+            <span> MouseHover </span> – Ocorre quando o ponteiro do mouse é posicionado sobre o controle.<br>
+            <span> MouseUp </span> –  Ocorre quando o ponteiro do mouse está sobre o controle e um botão do mouse seja liberado.<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do PictureBox</h1>
+        <p> <span> Normal </span> – deixar o forms em tela cheia<br>
+            <span> StrechImage </span> – ajustar a imagem de acordo com o tamanho do componente<br>
+            <span> AutoSize </span> – ajustar o componente de acordo com o tamanho da imagem<br>
+            <span> CenterImage </span> – centralizar a imagem dentro do componente<br>
+            <span> PcbFoto.Image = null </span> – limpa o componente(deixa sem imagem)<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do do RadioButton</h1>
+        <p> <span> Checked = false </span> – opção não selecionada<br>
+            <span> Checked = true </span> – opção selecionada<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do Label</h1>
+        <p> <span> AutoSize </span> – alterar para False permitindo que o tamanho do Label possa ser definido pelo programador. <br>
+            <span> (name) </span> – para definir um nome para o componente, que visa facilitar a identificação durante a programação <br>
+            <span> BackColor </span> – define a cor de fundo do componente <br>
+            <span> Font </span> – define a fonte, estilo e tamanho do texto <br>
+            <span> ForeColor </span> – define a cor da letra do componente <br>
+            <span> TextAlign </span> – define o alinhamento do texto dentro do label <br>
+            <span> Image </span> – permite incluir uma imagem no label <br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas coisas do ComboBox</h1>
+        <p> <span> Tipos </span> – Simple, DropDown, DropDownList (para selecionar usamos o DropDownStyle)<br>
+            <span> ComboBox1.Items.Add("item") </span> – Para adicionar um item atraves da programação<br>
+            <span> ComboBox1.Items.RemoveAt("indice") </span> – Para remover um item atraves do indice<br>
+            <span> ComboBox1.SelectedIndex </span> – Retorna o indice do item que esta selecionado<br>
+            <span> ComboBox1.SelectedItem </span> – Retorna a descrição do item que esta selecionado<br>
+            <span> ComboBox1.Itens.Count </span> – Retorna a quantidade total de itens no componente<br>
+            <span> Índice </span> – O primeiro item tem como indice oculto o 0, o segundo tem o 1 e etc...<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas coisas do ListBox</h1>
+        <p> <span> Modos </span> – None (Não pode selecionar nada), One (Pode selecoionar um), MultiSimple (Pode selecionar um ou mais de um), MultiExtended (Pode selecionar mais de um)<br>
+            <span> ListBox1.Items.RemoveAt("indice") </span> – Para remover um item atraves do indice<br>
+            <span> ListBox1.SelectedIndex </span> – Retorna o indice do item que esta selecionado<br>
+            <span> ListBox1.SelectedItem </span> – Retorna a descrição do item que esta selecionado<br>
+            <span> ListBox1.Itens.Count </span> – Retorna a quantidade total de itens no componente<br>
+            <span> Índice </span> – O primeiro item tem como indice oculto o 0, o segundo tem o 1 e etc...<br>
+            <span> ListBox1.Items.Add("item") </span> – Para adicionar um item atraves da programação<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas coisas do Timer</h1>
+        <p> <span> Enabled </span> – true(ligado), false(desligado)<br>
+            <span> Interval </span> – contado em ms(milisegundos), cada 1000 ms é 1 segundo<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas coisas do DateTimePicker</h1>
+        <p> <span> Format </span> – Long, Short, Time, Custom<br>
+            <span> d </span> – dia em um ou dois digitos (3)<br>
+            <span> dd </span> – dia em dois digitos (03)<br>
+            <span> ddd </span> – abreviação do dia da semana (Ter)<br>
+            <span> dddd </span> – nome completo do dia da semana (Terça)<br>
+            <span> M </span> – numero do mes em um ou dois digitos (6)<br>
+            <span> MM </span> – numero do mes em dois digitos (06)<br>
+            <span> MMM </span> – abreviação do mes (Jun)<br>
+            <span> MMMM </span> – nome completo do mes (Junho)<br>
+            <span> y </span> – o ultimo digito do ano (2)<br>
+            <span> yy </span> – os dois ultimos digitos do ano (02)<br>
+            <span> yyy </span> – o ano completo (2002)<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas coisas do MenuStrip</h1>
+        <p> <span> MenuItem </span> – Iserir um texto<br>
+            <span> ComboBox </span> – Inserir uma opção no estilo de caixa de itens<br>
+            <span> TextBox </span> – Inserir uma caixa de texto<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas coisas do ToolStrip</h1>
+        <p> <span> Button </span> – Inserir um botão com imagem<br>
+            <span> Label </span> – Inserir um texto fixo<br>
+            <span> SplitButton </span> – Inserir um botão, mas só executara o evento click no momento que selecionar o componente, e não o botão do mesmo<br>
+            <span> DropDownButton </span> – Inserir um botão, mas só executara o evento click no momento que selecionar o componente, ou botão do mesmo<br>
+            <span> Separator </span> – Criar divisões de componentes<br>
+            <span> ComboBox </span> – Inserir um opção no estilo de caixa de itens<br>
+            <span> TextBox </span> – Inserir uma caixa de texto<br>
+            <span> ProgressBar </span> – Inserir uma barra de progressão (termômetro)<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do Process</h1>
+        <p> <span> StartInfo.FileName </span> – especificar o nome da aplicação externa, junto com o Path da mesma<br>
+            <span> Start() </span> – executar a aplicação configurada na propriedade FileName<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Algumas propriedades do Forms</h1>
+        <p> <span> WindowState </span> – deixar o forms em tela cheia<br>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    margin: 0;
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom, black, gray);
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+button{
+    cursor: pointer;
+}
+
+
+/*----------Style Navbar----------*/
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 16vh;
+    margin-bottom: 5vh;
+    box-shadow: 0px 0px 15px;
+    transition: 0.5s;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    
+    width: 10%;       
+}
+.logo-navbar{
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+}
+.div-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0px 3.5vw;
+    transition: 0.5s;
+}
+.link-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+
+    text-decoration: underline transparent;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    font-family: "bungee";
+    font-size: 20px;
+    height: auto;
+    width: auto;
+}
+.link-navbar:hover{
+    text-decoration: underline white 3px;
+    transition: 0.4s;
+}
+.configuracoes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex: auto;
+    
+    width: 10%; 
+}
+.configuracoes-navbar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.configuracoes-navbar img{
+    filter: invert(1);
+}
+.configuracoes-navbar img:hover{
+    filter: invert(0.3);
+    transition: 0.5s;
+}
+/*----------Style Navbar----------*/
+
+
+/*----------Style Home----------*/
+.conteudo-container{
+    display: flex;
+    align-items: flex-start;
+
+    height: 70vh;
+}
+.conteudo1-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 0 2vw 0 4vw;
+}
+.conteudo1-titulo{
+    font-family: "Bungee";
+    font-size: 65px;
+    text-align: center;
+    color: #eca539;
+    height: auto;
+    transition: 0.5s;
+}
+.conteudo1-paragrafo{
+    font-family: "Bungee";
+    text-align: center;
+    font-size: 25px;
+    margin: 5.5vh 0px;
+}
+.container-btn-home{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    font-family: "Bungee";
+    text-align: center;
+}
+.cardap-btn{
+    height: auto;
+    font-family: "Bungee";
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #eca539;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0 0 12px;
+    transition: 0.3s;
+}
+.pcagr-dlclub-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    height: auto;
+}
+.dailyclub-btn, .pecaagora-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    height: 20px;
+    font-family: "Bungee";
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #eca539;
+    color: black;
+    font-size: 19.5px;
+    padding: 10px;
+    transition: 0.3s;
+    bottom: 0;
+    width: 45%;
+}
+.dailyclub-btn{
+    left: 0;
+    border: none;
+    height: 40px;
+    box-shadow: 0 0 12px;
+}
+.pecaagora-btn{
+    right: 0;
+    box-shadow: 0 0 12px;
+}
+.conteudo1-container .pecaagora-btn:hover, .cardap-btn:hover, .conteudo1-container .dailyclub-btn:hover{
+    background-color: #bd7f24;
+}
+.conteudo2-container{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+    width: 50%;
+    margin: 0 4vw 0 2vw;
+}
+.pizzaprincipal-img{
+    height: 300px;
+    width: 300px;
+    transition: 0.5s;
+    animation: girar 5s infinite linear;
+    border-radius: 50%;
+}
+@keyframes girar{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.escuro{
+    display: none;
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 100vh;
+    bottom: 0;
+    width: 100vw;
+}
+.escuro2{
+    display: none;
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 100vh;
+    bottom: 0;
+    width: 100vw;
+}
+#btn-voltarlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 99999px;
+    background-color: gray;
+}
+#btn-voltarlogin img{
+    width: 50px;
+    height: 50px;
+    border: solid gray 2px;
+    border-radius: 99999px;
+}
+#btn-voltarlogin img:hover{
+    box-shadow: 0px 0px 10px white;
+    transition: 0.3s;
+}
+/*----------Style Home----------*/
+
+
+/*----------Style Login----------*/
+.container-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70vh;
+    font-family: "Bungee";
+    padding: 20px;
+}
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70vh;
+    font-family: "Bungee";
+    padding: 20px;
+}
+.login-titulo{
+    font-family: "Bungee";
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+
+    margin: 7vh;
+    background: linear-gradient(to bottom, rgb(68, 68, 68), rgb(151, 151, 151));
+    border: solid 2px rgb(163, 163, 163);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px;
+    max-width: 340px;
+    height: 55vh;
+    padding: 30px;
+}
+.div-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    width: 100%;
+}
+.label-input{
+    position: absolute;
+
+    font-family: "Bungee";
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    transform: translateY(0px);
+    left: 10px;
+    pointer-events: none;
+}
+.input-nome, .input-email, .input-senha{
+    flex: auto;
+
+    border: none;
+    border-bottom: solid 2px black;
+    font-family: "Bungee";
+    font-size: 20px;
+    outline: 0;
+    padding: 0;
+    height: 7vh;
+    margin-top: 8px;
+    background-color: transparent;
+}
+.input-nome:focus ~ .label-input, .input-email:focus ~ .label-input, .input-senha:focus ~ .label-input,
+.input-nome:valid ~ .label-input, .input-email:valid ~ .label-input, .input-senha:valid ~ .label-input{
+    color: rgb(255, 255, 255);
+    transform: translateY(-20px);
+    font-size: 12px;
+    transition: 0.5s;
+}
+.input-nome:focus, .input-email:focus, .input-senha:focus{
+    border-bottom: solid 2px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+.esqsenha-container{
+    display: flex;
+
+    margin: 5px 0px 3px 0px;
+}
+.div-checkbox{
+    display: flex;
+    align-items: center;
+    flex: auto;
+    
+    width: 50%;
+}
+.div-checkbox input{
+    margin-right: 5px;
+    border: none;
+}
+.div-checkbox label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+}
+.div-esqsenha{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: auto;
+
+    width: 50%;
+}
+.div-esqsenha a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-size: 13px;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: underline transparent;
+    color: white;
+}
+.div-esqsenha a:hover{
+    transition: 0.3s;
+    text-decoration: underline 2px white;
+}
+.input-submit{
+    flex: auto;
+
+    margin: 1.5vh 0vh;
+    font-family: "Bungee";
+    font-size: 20px;
+    outline: 0;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 9vh;
+    box-shadow: 0px 0px 15px;
+}
+.input-submit:hover{
+    background-color: rgb(99, 99, 99);
+    transition: 0.3s;
+}
+.input-submit:active{
+    background: linear-gradient(rgb(94, 93, 93), gray);
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+.div-cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.paragrafo-cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    
+    font-size: 15px;
+}
+.paragrafo-cadastrar a{
+    display: flex;
+    align-items: center;
+
+    font-size: 15px;
+    color: white;
+    text-decoration: underline transparent;
+    text-shadow: 0px 0px 5px black;
+}
+.paragrafo-cadastrar a:hover{
+    text-decoration: underline 2px white;
+    transition: 0.3s;
+}
+/*----------Style Login----------*/
+
+
+/*----------Style Configurações----------*/
+.main-conf-titulos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35px;
+}
+#tmClaro{
+    font-family: "Bungee";
+    font-size: 60px;
+    transition: 0.5s;
+}
+.main-conf{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    height: 70vh;
+}
+.btn-mdfundo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    height: 120px;
+    width: 250px;
+    transition: 0.5s;
+}
+#btn-mudarfundo-claro{
+    justify-content: flex-end;
+
+    z-index: 2;
+    background-color: rgb(182, 182, 182);
+    border: solid rgb(182, 182, 182);
+}
+#btn-mudarfundo-escuro{
+    z-index: 1;
+    background-color: rgb(37, 37, 37);
+    border: solid rgb(37, 37, 37);
+}
+#btn-mudarfundo-claro, #btn-mudarfundo-escuro{
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+
+    cursor: pointer;
+    height: 120px;
+    width: 250px;
+    border-radius: 999px;
+    outline: 0;
+    transition: 0.5s;
+}
+#sol{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    height: 75px;
+    width: 75px;
+    margin: 7px;
+    transition: 0.5s;
+}
+#lua{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    height: 75px;
+    width: 75px;
+    margin: 7px;
+    transition: 0.5s;
+}
+#ball{
+    position: absolute;
+    margin: 6px;
+    z-index: 4;
+    right: 0;
+    transform: translateX(-158px);
+    transition: 0.4s;
+    background-color: white;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+/*----------Style Configurações----------*/
+
+
+/*----------Style Erro----------*/
+.erro-titulo{
+    color: white;
+    margin-left: 25.555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555px;
+}
+/*----------Style Erro----------*/

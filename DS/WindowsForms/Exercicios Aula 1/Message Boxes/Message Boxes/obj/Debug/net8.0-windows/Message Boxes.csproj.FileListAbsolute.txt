@@ -1,0 +1,32 @@
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.exe
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.deps.json
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.runtimeconfig.json
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.dll
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.pdb
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message_Boxes.Form1.resources
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.csproj.GenerateResource.cache
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.GeneratedMSBuildEditorConfig.editorconfig
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.AssemblyInfoInputs.cache
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.AssemblyInfo.cs
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.csproj.CoreCompileInputs.cache
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.dll
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\refint\Message Boxes.dll
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.pdb
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.genruntimeconfig.cache
+E:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\ref\Message Boxes.dll
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.exe
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.deps.json
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.runtimeconfig.json
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.dll
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\bin\Debug\net8.0-windows\Message Boxes.pdb
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message_Boxes.Form1.resources
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.csproj.GenerateResource.cache
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.GeneratedMSBuildEditorConfig.editorconfig
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.AssemblyInfoInputs.cache
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.AssemblyInfo.cs
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.csproj.CoreCompileInputs.cache
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.dll
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\refint\Message Boxes.dll
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.pdb
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\Message Boxes.genruntimeconfig.cache
+D:\DS\Exercicios Aula 1\Message Boxes\Message Boxes\obj\Debug\net8.0-windows\ref\Message Boxes.dll

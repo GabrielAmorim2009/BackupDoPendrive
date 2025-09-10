@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo Girando</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.container {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    width: 400px;
+    height: 400px;
+    border-radius: 900px;
+    animation: girar 5s infinite linear;
+    background-image: url(Roleta\ de\ Cassino.jpg);
+    background-size: cover;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);;
+    }
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="menu">
+        <main class="main-container">
+            <a href="testes.html" class="link">Testes_CSS</a>
+            <a href="displays.html" class="link">Displays</a>        
+            <a href="positions.html" class="link">Positions</a>
+            <a href="overflow.html" class="link">Overflow</a>
+        </main>
+        <main class="main-container">
+            <a href="input.html" class="link">Input_Dinamico</a>
+            <a href="keyframes.html" class="link">Keyframes</a>
+            <a href="flexwrap.html" class="link">Flex-Wrap</a>
+            <a href="borda RGB.html" class="link">RGB</a>
+        </main>
+    </header>
+
+
+    <div class="container">
+        <div class="circulo"></div>
+    </div>
+
+</body>
+</html>
